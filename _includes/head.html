@@ -1,0 +1,32 @@
+<head>  	
+  	<meta charset="utf-8">
+    <meta name="description" content="Building Great Apps For A Better World">
+    <meta name="keywords" content="Codemons, Landing page, Age Calculator App">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+	<title>{% if page.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }} &middot; {{ site.tagline }}{% endif %}</title>
+
+	<!-- Page meta data -->
+	<meta name="author" content="{{ site.author.name }}">
+	<meta name="copyright" content="(c) {{ site.time | date: '%Y' }} {{ site.author.name }}">
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+	<meta property="og:type" content="{{ site.type }}">
+	<meta property="og:image" content="{{ site.url }}{{ site.img }}{{ site.author.avatar }}">
+	<meta property="og:site_name" content="{{ site.author.name }}">
+	<meta property="fb:admins" content="{{ site.author.fbid }}">
+
+	<meta property="og:title" content="{% if page.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }} &middot; {{ site.tagline }}{% endif %}">
+	<meta name="description"  property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="keywords" content="{{ site.title }}{% for keyword in page.keywords %}, {{ keyword }}{% endfor %}">
+	  
+	<link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css" type="text/css" media="screen">
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="/assets/css/material.min.css" rel="stylesheet">
+    <link href="/assets/css/ripples.min.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/responsive.css" rel="stylesheet">
+    <link href="/assets/css/animate.min.css" rel="stylesheet">
+</head>
