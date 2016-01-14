@@ -1,0 +1,17 @@
+<div class="navbar-fixed" role="navigation">
+  <nav class="teal z-depth-0">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><i class="material-icons left">code</i> <span class="site-title">{{site.title}}</span></a>
+
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/blog"><i class="material-icons">library_books</i></a></li>
+        <li><a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}#contact"><i class="material-icons">send</i></a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="/blog"><i class="material-icons left">library_books</i> Blog</a></li>
+        <li><a href="#contact"><i class="material-icons left">send</i> Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>

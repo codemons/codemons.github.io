@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		{% include head-meta.html %}
+		{% include head-imports.html %}
+    <style>.navbar-fixed {  height: 0; }</style>
+  </head>
+
+	<body id=body class="scrollspy" itemscope itemtype="http://schema.org/WebPage">
+
+    <main>
+      {% include components/nav.html %}
+
+      {{ content }}
+    </main>
+
+    {% include components/footer-large.html %}
+
+    {% include scripts.html %}
+    <script src="{{site.js}}/navbar-scroll-effect.js"></script>
+		{% include google-analytics.html %}
+	</body>
+
+</html>

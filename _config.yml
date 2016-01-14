@@ -1,16 +1,13 @@
-#
-# This file contains configuration flags to customize your site
-#
+# Site Meta
+title:            Codemons
+tagline:          Building Great Apps For A Better World
+description:      This site is centered around my blog, but contains lots of other content as well. You can use the links at the top, or else jump right to the various sections.
 
-# Site settings
-title:				Codemons
-email:				contact@codemons.com
-tagline:			'Building Great Apps For A Better World'
-description: This site is centered around my blog, but contains lots of other content as well. You can use the links at the top, or else jump right to the various sections.
-baseurl: ''
-url: 				'http://codemons.com' # the base hostname & protocol for your site
-domain:           	codemons.com
-type:				website
+domain:           codemons.com
+type:             website
+logo:             /logo.png
+
+contact:  contact@codemons.com
 
 # Author details
 author:
@@ -27,17 +24,24 @@ author:
   twitter:        shivaji_varma
   youtube:        enchantingstrings
 
+#Assets paths
+css: /assets/css
+js: /assets/js
+img: /assets/img
+font: /assets/font
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-42422649-2
+
+baseurl:          ''
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: http://codemons.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
