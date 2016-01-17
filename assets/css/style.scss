@@ -1,0 +1,205 @@
+---
+---
+@charset "utf-8";
+
+/* Start: Reserved class name. Only used for selection. */
+.first{}
+.last{}
+.middle{}
+/* End: Reserved class name. Only used for selection. */
+
+.clear{clear: both}
+
+.hide{display: none}
+
+.invisible{visibility: hidden}
+
+.no-margin{margin: 0px}
+
+.no-padding{padding: 0px}
+
+.no-spacing{
+    padding: 0px;
+    margin: 0px;
+}
+
+.text-justify{text-align: justify}
+
+.font-weight-bold{font-weight: bold}
+
+.full-width{width: 100%}
+
+.max-width-400px{max-width: 400px}
+
+.margin-auto{margin: auto}
+
+.no-underline, .no-underline:hover{text-decoration: none}
+
+.capitalize{text-transform: capitalize}
+
+.text-align-center{text-align: center}
+
+.text-shadow{text-shadow:4px 3px 0 rgba(0,0,0,0.15);}
+
+.float-right{float:right}
+
+.float-left{float:left}
+
+.display-inline{display: inline}
+
+.display-block{display: block}
+
+.no-resize-width{resize: vertical}
+
+p .smiley{width:20px;display:inline}
+
+ul.no-style{list-style-type: none}
+
+.size-20px{
+    height:20px;
+    width:20px;
+}
+
+.size-32px{
+    height:32px;
+    width:32px;
+}
+
+.font-32px{font-size: 32px}
+.font-8em{font-size: 8em}
+.font-100px{font-size: 100px}
+
+/* Margins, Paddings, Borders
+-------------------------------*/
+$directions: top right bottom left;
+
+@each $direction in $directions{
+    @for $i from 1 through 10{
+        .margin-#{$direction}-#{$i}px{margin-#{$direction}: 0px + $i;}
+        .margin-#{$direction}-#{10 + (5 * $i)}px{margin-#{$direction}: 10px + (5 * $i);}
+        .padding-#{$direction}-#{$i}px{padding-#{$direction}: 0px + $i;}
+        .padding-#{$direction}-#{10 + (5 * $i)}px{padding-#{$direction}: 10px + (5 * $i);}
+    }
+    .border-#{$direction}{border-#{$direction}: 1px solid #d6d6d6;}
+}
+@for $i from 1 through 10{
+    .margin-#{$i}px{margin: 0px + $i;}
+    .margin-#{10 + (5 * $i)}px{margin: 10px + (5 * $i);}
+    .padding-#{$i}px{padding: 0px + $i;}
+    .padding-#{10 + (5 * $i)}px{padding: 10px + (5 * $i);}
+}
+.border{border: 1px solid #d6d6d6;}
+
+
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: white;
+}
+
+.site-title {
+  font-family: 'Lobster', cursive;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: white;
+}
+
+.parallax-container {
+  min-height: 670px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+
+.parallax-container .section {
+width: 100%;
+}
+
+#index-banner .section .container{
+	margin-top: 10%;
+}
+
+#index-banner .section{
+	margin-top:55px;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  #index-banner .section .container{
+	margin-top: 15%;
+ }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/* Fixed Footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+	flex: 1 0 auto;
+}
+
+.section.shaded{background:rgb(247,247,247);}
+
+/* Back to top button positioning */
+.back-to-top {
+  position: absolute;
+  margin-top: -45px;
+  right: 32px;
+}
+
+/** Back to top **/
+.back-to-top-small {
+  position: absolute;
+  margin-top: -30px;
+  right: 32px;
+}
+
+#promoted{
+  min-height: 450px;
+  background-image:url('/assets/img/why-bg.jpg');
+  background-size: cover;
+}
+
+.ads{
+  background-color: #f5f2f0;
+  max-height:600px;
+}
