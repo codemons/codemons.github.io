@@ -7,22 +7,22 @@ title: Age Calculator
   <div class="row">
     <div class="col l9 s12">
       <p>Age Calculator is a Hybrid mobile app developed using Cordova. Boostrap framework for UI development.</p>
-      <a href="https://play.google.com/store/apps/details?id=codemons.age_calculator" target="_blank" class="btn">Play Store</a>
+      <a href="https://play.google.com/store/apps/details?id=codemons.age_calculator" target="_blank" class="btn wow bounceIn">Play Store</a>
 
       <h5>Version</h5>
-      <p>1.6.0</p>
+      <p class="wow fadeInLeft">1.6.0</p>
 
       <h5>Installation</h5>
-      <pre><code class="language-bash">$ npm install -g cordova</code></pre>
+      <pre class="wow fadeInLeft"><code class="language-bash">$ npm install -g cordova</code></pre>
 
-      <pre><code class="language-bash">$ git clone https://github.com/codemons/age-calculator-cordova.git age-calculator
+      <pre class="wow fadeInLeft"><code class="language-bash">$ git clone https://github.com/codemons/age-calculator-cordova.git age-calculator
 $ cd age-calculator
 $ cordova platform add [android/ios/windows]</code></pre>
 
       <p>Install platform respective SDK. And then give build.</p>
-      <pre><code class="language-bash">$ cordova build</code></pre>
+      <pre class="wow fadeInLeft"><code class="language-bash">$ cordova build</code></pre>
     </div>
-    <div class="col l3 s12">
+    <div class="col l3 s12 wow fadeInRight">
       {% include adsence-responsive.html %}
     </div>
   </div>
@@ -30,7 +30,7 @@ $ cordova platform add [android/ios/windows]</code></pre>
 
 <div class="container">
   <h5>Code</h5>
-  <pre><code class="language-javascript">var getAge = (function(){
+  <pre class="wow fadeInLeft"><code class="language-javascript">var getAge = (function(){
   function difference(d1, d2) {
       var m = moment(d1);
       var years = m.diff(d2, 'years');
@@ -60,20 +60,21 @@ $ cordova platform add [android/ios/windows]</code></pre>
   <h5>Screenshots</h5>
   <div class="row">
     <div class="col m3 hide-on-small-and-down">
-      <img src="{{site.img}}/products/age-calculator/1.png" width="100%" class="materialboxed padding-top-10px">
+      <img src="{{site.img}}/products/age-calculator/1.png" width="100%" class="materialboxed padding-top-10px wow fadeInRight" data-wow-delay="500ms">
     </div>
     <div class="col m3 hide-on-small-and-down">
-      <img src="{{site.img}}/products/age-calculator/2.png" width="100%" class="materialboxed padding-top-10px">
+      <img src="{{site.img}}/products/age-calculator/2.png" width="100%" class="materialboxed padding-top-10px wow fadeInRight" data-wow-delay="1000ms">
     </div>
     <div class="col m3 s12">
-      <img src="{{site.img}}/products/age-calculator/3.png" width="100%" class="materialboxed padding-top-10px">
+      <img src="{{site.img}}/products/age-calculator/3.png" width="100%" class="materialboxed padding-top-10px wow fadeInRight" data-wow-delay="1500ms">
     </div>
     <div class="col m3 s12">
-      <img src="{{site.img}}/products/age-calculator/4.png" width="100%" class="materialboxed padding-top-10px">
+      <img src="{{site.img}}/products/age-calculator/4.png" width="100%" class="materialboxed padding-top-10px wow fadeInRight" data-wow-delay="2000ms">
     </div>
   </div>
+  <p class="flow-text">Free Software, Hell Yeah!</p>
 </div>
 
-<div class="container white">
+<div class="container white wow fadeInUp">
   {% include components/author-shivaji.html %}
 </div>

@@ -66,8 +66,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="14.419354">
-              <caret line="135" column="133" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="133" />
+            <state vertical-scroll-proportion="-16.32258">
+              <caret line="33" column="62" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -106,8 +106,8 @@
       <file leaf-file-name="2016-01-17-age-calculator.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/products/_posts/2016-01-17-age-calculator.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25029376">
-              <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="57" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.18096358">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -765,14 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="14.419354">
-          <caret line="135" column="133" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="133" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.83871">
@@ -785,14 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.967742">
           <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.064516">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -823,6 +807,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.064516">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.32258">
+          <caret line="33" column="62" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/components/author-shivaji.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.806452">
@@ -833,8 +833,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/products/_posts/2016-01-17-age-calculator.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25029376">
-          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="57" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.18096358">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
         </state>
       </provider>
