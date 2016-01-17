@@ -1,27 +1,24 @@
 <footer id="footer" class="page-footer grey darken-1 scrollspy" itemscope itemtype="http://schema.org/WPFooter">
+  <a href="#body" class="btn-floating btn-large imary back-to-top waves-effect waves-light red">
+    <i class=" mdi-hardware-keyboard-arrow-up"></i>
+  </a>
   <section class="container">
-    <a href="#body" class="btn-floating btn-large imary back-to-top waves-effect waves-light red">
-      <i class=" mdi-hardware-keyboard-arrow-up"></i>
-    </a>
     <div class="row">
-      
-	  <div class="col l6 s12">
+      <div class="col l6 s12">
         <h5 class="white-text"><span class="site-title">{{site.title}}</span> <br><small>{{site.tagline}}</small></h5>
-		<ul>
-          <li><a class="white-text" href="/login.html">Login</a></li>
-          <li><a class="white-text" href="/login.html">Sign Up</a></li>
-          <li><a class="white-text" href="/cart.html">Cart</a></li>
+        <ul>
+          <li><a class="white-text" href="/blog/#">Blog</a></li>
         </ul>
       </div>
-  
+
       <div class="col l3 s12">
         <h5 class="white-text">POLICIES</h5>
         <ul>
-          <li><a class="white-text modal-trigger" href="#terms-and-conditions">Terms and Conditions</a></li>
-          <li><a class="white-text modal-trigger" href="#privacy-statement">Privacy Statement</a></li>
+          <li><a class="white-text" href="/privacy/#">Privacy Statement</a></li>
+          <li><a class="white-text" href="/license/#">MIT License</a></li>
         </ul>
       </div>
-	  
+
       <div class="col l3 s12">
         <h5 class="white-text">Connect</h5>
         <p><a class="btn-floating social" style="background-color:#3B5998" href="https://www.facebook.com/codemons" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -29,12 +26,12 @@
           <a class="btn-floating social" style="background-color:#DD4B39" href="https://plus.google.com/+CodemonsDotCom" target="_blank"><i class="fa fa-google-plus"></i></a>
         </p>
       </div>
-	  
+
     </div>
   </section>
   <section class="footer-copyright">
     <div class="container">
-      &copy; {{ site.title }} {{ site.time | date: '%Y' }} All right reserved.
+      &copy; {{ site.title }} {{ site.time | date: '%Y' }} All right reserved. made with <i class="mdi-action-favorite-outline red-text"></i> by {{site.author.name}}
     </div>
   </section>
 </footer>

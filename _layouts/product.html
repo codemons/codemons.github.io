@@ -2,16 +2,33 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<main>
+  {% include components/nav.html %}
+  <nav class="teal lighten-2">
+    <div class="nav-wrapper container">
+      <div class="col s12" itemscope itemtype="http://schema.org/BreadcrumbList">
+      <a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}#" class="breadcrumb">Home</a>
+      <a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}products/#" class="breadcrumb">Products</a>
+      <a href="#" class="breadcrumb">{{ page.title }}</a>
+    </div>
+    </div>
+  </nav>
 
-  <div class="entry">
+  <article  itemscope itemtype="http://schema.org/Article">
+    <section class="container">
+      <h3 itemprop=name>{{ page.title }}</h3>
+    </section>
+
     {{ content }}
-  </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+  </article>
+</main>
 
-  {% include disqus.html %}
-</article>
+<section class="section">
+  <div class="container">
+    {% include disqus.html %}
+  </div>
+</section>
+
+{% include components/footer-small.html %}
+

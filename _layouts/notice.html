@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include head-meta.html %}
+  {% include head-imports.html %}
+</head>
+
+<body id=body class="scrollspy grey lighten-3" itemscope itemtype="http://schema.org/WebPage">
+
+<div class="container">
+
+    <div class="card white">
+      <div class="card-content teal-text">
+        <span class="card-title">{{page.title}}</span>
+        {{content}}
+      </div>
+      <div class="card-action">
+        <a href="{{ site.baseurl }}/#" class="btn blue right">Back To Home</a>&nbsp;
+      </div>
+    </div>
+
+</div>
+
+{% include scripts.html %}
+{% include google-analytics.html %}
+</body>
+
+</html>

@@ -10,9 +10,11 @@
     //Parrallax Effect
     $('.parallax').parallax();
 
-    
+
     $('.scrollspy').scrollSpy();
-	
+
+    $('.slider').slider();
+
 	// Countdown
 	$('#counter').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
 		if (visible) {

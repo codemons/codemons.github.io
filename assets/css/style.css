@@ -88,14 +88,26 @@ main {
 
 /* Back to top button positioning */
 .back-to-top {
-  position: relative;
-  top: -45px;
-  left: 50%;
-  margin: 0px -25px;
+  position: absolute;
+  margin-top: -45px;
+  right: 32px;
+}
+
+/** Back to top **/
+.back-to-top-small {
+  position: absolute;
+  margin: 0;
+  right: 32px;
+  bottom: 30px;
 }
 
 #promoted{
   min-height: 450px;
   background-image:url('/assets/img/why-bg.jpg');
   background-size: cover;
+}
+
+.ads{
+  background-color: #F5F5F5;
+  max-height:600px;
 }
