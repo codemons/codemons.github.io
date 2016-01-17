@@ -29,6 +29,34 @@ $ cordova platform add [android/ios/windows]</code></pre>
 </div>
 
 <div class="container">
+  <h5>Code</h5>
+  <pre><code class="language-javascript">var getAge = (function(){
+  function difference(d1, d2) {
+      var m = moment(d1);
+      var years = m.diff(d2, 'years');
+      m.add(-years, 'years');
+      var months = m.diff(d2, 'months');
+      m.add(-months, 'months');
+      var days = m.diff(d2, 'days');
+
+    return {years: years, months: months, days: days,
+      toString: function(){
+        var age= [];
+        if(this.years &gt; 0) age.push(this.years+ ' year'+(this.years&gt; 1? 's ':' '));
+        if(this.months &gt; 0) age.push(months+ ' month'+(this.months&gt; 1? 's':''));
+        if(this.days &gt; 0) age.push(this.days+ ' day'+(this.days&gt; 1? 's':''));
+        if(age.length &gt; 1)
+        age.splice(age.length-1,0,' and ');
+        return age.join('');
+      }
+    };
+  }
+
+  return function(dob){
+    return difference(new Date(), dob);
+  };
+}());</code></pre>
+
   <h5>Screenshots</h5>
   <div class="row">
     <div class="col m3 hide-on-small-and-down">
