@@ -26,7 +26,7 @@ description: Showcase of few of my works. Do check them out once.
 				<div class="col s12 m4">
 				  <div class="card medium">
 					<div class="card-image">
-					  <img src="{{site.img}}/products/age-calculator/1.png">
+					  <img src="{% if post.img %}{{site.img}}{{post.img}}{% else %}{{post.image}}{% endif %}">
 					  <span class="card-title" style="background-color:rgba(0,0,0,0.5)">{{ post.title }}</span>
 					  
 					</div>
