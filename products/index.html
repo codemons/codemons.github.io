@@ -8,7 +8,7 @@ description: Showcase of few of my works. Do check them out once.
   <nav class="teal lighten-2">
     <div class="nav-wrapper container">
       <div class="col s12" itemscope itemtype="http://schema.org/BreadcrumbList">
-      <a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}#" class="breadcrumb">Home</a>
+      <a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}#" class="breadcrumb"><i class="material-icons">home</i></a>
       <a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}products/#" class="breadcrumb">Products</a>
     </div>
     </div>
@@ -24,7 +24,7 @@ description: Showcase of few of my works. Do check them out once.
 		{% for post in site.categories['products'] %}
 			
 				<div class="col s12 m4">
-				  <div class="card medium">
+				  <div class="card medium wow bounceIn hoverable">
 					<div class="card-image">
 					  <img src="{% if post.img %}{{site.img}}{{post.img}}{% else %}{{post.image}}{% endif %}">
 					  <span class="card-title" style="background-color:rgba(0,0,0,0.5)">{{ post.title }}</span>
