@@ -161,10 +161,14 @@ p {
   }
 }
 
+.move-next{
+	position:absolute; left:48%; bottom:6%;
+}
+
 @media only screen and (max-width : 600px) {
 
   #index-banner {
-    min-height: 660px;
+    min-height: 620px;
   }
   
   #index-banner .section {

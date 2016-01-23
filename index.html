@@ -16,45 +16,50 @@ index: true
       </div>
     </div>
   </div>
-  <a href="#whatwedo" class="btn-floating btn-large btn-border white" style="position:absolute; left:50%; bottom:6%"><i class=" mdi-hardware-keyboard-arrow-down teal-text"></i></a>
+  <a href="#whatwedo" class="btn-floating btn-large btn-border white move-next hoverable wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms"><i class=" mdi-hardware-keyboard-arrow-down teal-text"></i></a>
   <div class="parallax teal"><img class="wow fadeIn" src="{{site.img}}/hero-area.jpg" alt="Unsplashed background"></div>
 </div>
 
 
-<section id="whatwedo"  class="section scrollspy">
+<!--   What We Do Section   -->
+<section class="section">
 
-  <!--   Icon Section   -->
-  <div class="row">
+  <div class="container">
 
-	<div class="col s12">
-		<h2 class="center header wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="100ms">What We Do</h2>
-		<h5 class="thin center text-lighten-2 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">This is Why You Will Love Codemons</h5>
-	</div>
+    <div class="row">
 
-	<div class="col s12 m4 wow fadeInUp"  data-wow-delay="500ms">
-	  <div class="icon-block">
-		<h5 class="center">Ideate</h5>
-		<h2 class="center brown-text"><i class="fa fa-lightbulb-o"></i></h2>
-		<p class="center">An idea can never come to fruition without research. We dawn the thinking hat and sift through numerous ideas - the good, the bad and the ugly - to create the product and features that work best. We do an extensive wireframe sessions , collaborate on it together and even build mock mobile apps and prototypes to bring to life all the thoughts and words.</p>
-	  </div>
-	</div>
+      <div class="col s12">
+        <h2 id="whatwedo" class="scrollspy center header wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="100ms">What We Do</h2>
+        <h5 class="thin center text-lighten-2 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">We Ideate, Prototype, Design, Build and Launch</h5>
+      </div>
 
-	<div class="col s12 m4 wow fadeInUp"  data-wow-delay="1000ms">
-	  <div class="icon-block">
-		<h5 class="center">Design</h5>
-		<h2 class="center brown-text"><i class="fa fa-flask"></i></h2>
-		<p class="center">We is deeply passionate about building responsive 'User Interfaces'. We strive to get the right balance in the user experience for various types of user personas. We build flexible, high performance and scalable platforms and are completely committed to doing it in the most optimal way.</p>
-	  </div>
-	</div>
+      <div class="col s12 m4 wow fadeInUp"  data-wow-delay="500ms">
+        <div class="icon-block">
+        <h5 class="center">Ideate</h5>
+        <h2 class="center brown-text"><i class="fa fa-lightbulb-o"></i></h2>
+        </div>
+      </div>
 
-	<div class="col s12 m4 wow fadeInUp" data-wow-delay="1500ms">
-	  <div class="icon-block">
-		<h5 class="center">Build</h5>
-		<h2 class="center brown-text"><i class="fa fa-wrench"></i></h2>
-		<p class="center">We love build both Web based products and Mobile Apps using Spring MVC, PHP and Node.js. Or, any other MVC framework as they lend themselves well to build extremely testable and agile platforms.</p>
-	  </div>
-	</div>
+      <div class="col s12 m4 wow fadeInUp"  data-wow-delay="1000ms">
+        <div class="icon-block">
+        <h5 class="center">Design</h5>
+        <h2 class="center brown-text"><i class="fa fa-flask"></i></h2>
+        </div>
+      </div>
 
+      <div class="col s12 m4 wow fadeInUp" data-wow-delay="1500ms">
+        <div class="icon-block">
+        <h5 class="center">Build</h5>
+        <h2 class="center brown-text"><i class="fa fa-wrench"></i></h2>
+        </div>
+      </div>
+
+      <div class="col m12 wow fadeInRight center" data-wow-duration="1000ms" data-wow-delay="100ms">
+        <p class="flow-text">Codemons team of developers comes up with several ideas to test and experiment. These projects get prototyped through in-house design and technology, and are made open to public.</p>
+
+      </div>
+
+    </div>
   </div>
 
 </section>
@@ -156,7 +161,7 @@ index: true
       <div class="col l6 s12 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
         <h4 class="thin">Love to Hear From You</h4>
           <!-- Form -->
-        <form class="contact-form" role="form" method="post">
+        <form class="contact-form" role="form" method="post" action="javascript:contactForm()">
           <div class="input-field col s12">
             <i class="mdi-action-account-box prefix"></i>
             <input id="name" type="text" autocomplete="off" required="required">
@@ -164,8 +169,8 @@ index: true
           </div>
           <div class="input-field col s12">
             <i class="mdi-content-mail prefix"></i>
-            <input id="email" type="email" class="validate" autocomplete="off" required="required">
-            <label for="email" data-error="wrong" data-success="right">Email</label>
+            <input id="sender" type="email" class="validate" autocomplete="off" required="required">
+            <label for="sender" data-error="wrong" data-success="right">Email</label>
           </div>
 
           <div class="input-field col s12">
@@ -181,8 +186,45 @@ index: true
   </div>
 </div>
 
-<section class="content-wrap">
-
 <section id="map" class="section no-padding scrollspy">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.5765693236062!2d77.65076395063136!3d12.870602920523696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6ca8203d05d7%3A0x88b145537010358a!2sHosa+Road+Junction+Bus+Stop!5e0!3m2!1sen!2sin!4v1451727872888" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 </section>
+
+
+
+<!-- Modal Structure -->
+<div id="contact-form-modal" class="modal bottom-sheet">
+  <div class="modal-content">
+    <h4 class="title">Sending message</h4>
+    <div class="status"></div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Hide</a>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  function contactForm(){
+    $('#contact-form-modal .status').html('<div class="preloader-wrapper big active"><div class="spinner-layer spinner-green-only"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div>');
+    $('#contact-form-modal').openModal();
+    $.ajax({
+      type: "POST",
+      url: 'http://php-shivajivarma.rhcloud.com/mail/mail.php',
+      data: {name:$('#name').val(),sender:$('#sender').val(),message:$('#message').val(),subject:"Contact Form"},
+      success: function(status){
+        if(status == 'success'){
+          $('#contact-form-modal title').html('Sent');
+          $('#contact-form-modal .status').html('Message send successfully :)');
+        } else{
+          $('#contact-form-modal title').html('Failed');
+          $('#contact-form-modal .status').html('Unable to send. Please try after sometime.');
+        }
+      },
+      fail: function(){
+        $('#contact-form-modal title').html('Failed');
+        $('#contact-form-modal .status').html('Unable to send. Please try after sometime.');
+      }
+    });
+  }
+ </script>
