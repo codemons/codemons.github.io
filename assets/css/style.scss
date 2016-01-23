@@ -117,47 +117,64 @@ p {
 }
 
 .parallax-container {
-  min-height: 670px;
+  min-height: 380px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
 }
 
-
 .parallax-container .section {
-width: 100%;
+  width: 100%;
 }
 
 #header-logo {
   position: relative;
   top: 0.8rem;
-  height: 3.1rem; }
-  
-#index-banner .section .container{
-	margin-top: 10%;
+  height: 3.1rem; 
+}
+
+#index-banner{
+	min-height: 860px;
 }
 
 #index-banner .section{
-	margin-top:55px;
+	position: absolute;
+	top:55px;
 }
 
+#index-banner .section .container{
+	margin-top: 350px;
+}
+  
+
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
+  
+  #index-banner {
+    min-height: 700px;
   }
   #index-banner .section {
-    top: 10%;
+    position: absolute;
+    top: 64px;
+  }
+  #index-banner .section .container{
+	margin-top: 200px;
   }
 }
 
 @media only screen and (max-width : 600px) {
+
+  #index-banner {
+    min-height: 660px;
+  }
+  
   #index-banner .section {
-    top: 0;
+    position: absolute;
+    top: 56px;
   }
   #index-banner .section .container{
-	margin-top: 15%;
- }
+	margin-top: 150px;
+  }
+  
 }
 
 .icon-block {
