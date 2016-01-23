@@ -1,37 +1,30 @@
-{% if page.index %}
 <div class="navbar-fixed" role="navigation">
-  <nav class="teal">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}#" class="brand-logo"><img id=header-logo title=Logo src="{{site.img}}/logo.png"/> <span class="site-title">{{site.title}}</span></a>
+  <!-- Dropdown Structure -->
+  <ul id="nav-links" class="dropdown-content">
+    <li><a href="/products#">Products</a></li>
+    <li><a href="/algorithms#">Algorithms</a></li>
+  </ul>
 
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+  <nav class="{%if page.index%}teal{%else%}white{%endif%}">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="{{site.baseurl}}{% if page.index != true %}/{% endif %}#" class="brand-logo {%if page.index != true%}teal-text{%endif%}""><img id=header-logo title=Logo src="{{site.img}}/logo.png"/> <span class="site-title">{{site.title}}</span></a>
+
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons {%if page.index%}teal-text{%endif%}">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="/blog/#"><i class="material-icons">library_books</i></a></li>
-        <li><a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}#contact"><i class="material-icons">send</i></a></li>
+
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-button {%if page.index != true%}teal-text{%endif%}" href="#!" data-activates="nav-links"><i class="material-icons right">arrow_drop_down</i> Works</a></li>
+
+        <li><a href="/team#" class="{%if page.index != true%}teal-text{%endif%}"><i class="material-icons left">people</i> Team</a></li>
+        <li><a href="/blog#" class="{%if page.index != true%}teal-text{%endif%}"><i class="material-icons left">library_books</i> Blog</a></li>
+        <li><a href="{%if page.index != true%}/{%endif%}#contact" class="{%if page.index != true%}teal-text{%endif%}"><i class="material-icons left">send</i> Contact</a></li>
+
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="/blog/#"><i class="material-icons left">library_books</i> Blog</a></li>
-        <li><a href="#contact"><i class="material-icons left">send</i> Contact Us</a></li>
+        <li><a href="/team#"><i class="material-icons left">people</i> Team</a></li>
+        <li><a href="/blog#"><i class="material-icons left">library_books</i> Blog</a></li>
+        <li><a href="{%if page.index != true%}/{%endif%}#contact"><i class="material-icons left">send</i> Contact Us</a></li>
       </ul>
     </div>
   </nav>
 </div>
-{% else %}
-<div class="navbar-fixed" role="navigation">
-  <nav class="white">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}#" class="brand-logo teal-text"><img id=header-logo title=Logo src="{{site.img}}/logo.png"/> <span class="site-title">{{site.title}}</span></a>
-
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons teal-text">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="/blog/#"><i class="material-icons teal-text">library_books</i></a></li>
-        <li><a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}#contact"><i class="material-icons teal-text">send</i></a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="/blog/#"><i class="material-icons left teal-text">library_books</i> Blog</a></li>
-        <li><a href="#contact"><i class="material-icons left teal-text">send</i> Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-{% endif %}

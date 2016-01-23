@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<main class="grey lighten-3">
+  {% include components/nav.html %}
+  
+  <article>
+
+    {{ content }}
+
+  </article>
+</main>
+
+<section class="section grey lighten-3">
+  <div class="container">
+    {% include disqus.html %}
+  </div>
+</section>
+
+{% include components/footer-small.html %}
+
