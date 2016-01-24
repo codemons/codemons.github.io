@@ -62,7 +62,9 @@ description: Collection of algorithms
                 <div class="col s12 m4">
                   <div class="card hoverable">
                     <div class="card-content">
-                      <span class="card-title grey-text text-darken-4">{{post.title}}</span>
+                      <span class="card-title yellow-text text-darken-4">{{post.title}}</span>
+                      <div class="clear"></div>
+                      <small class="wow bounceIn">Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
                       <p>{{ post.description }}</p>
                     </div>
                     <div class="card-action">
