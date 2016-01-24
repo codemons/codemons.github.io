@@ -4,6 +4,7 @@
 <head>
   {% include head-meta.html %}
   {% include head-imports.html %}
+  {% if page.mobileads %}
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>
     (adsbygoogle = window.adsbygoogle || []).push({
@@ -11,6 +12,7 @@
       enable_page_level_ads: true
     });
   </script>
+  {% endif %}
 </head>
 
 <body id=body class="scrollspy" itemscope itemtype="http://schema.org/WebPage">

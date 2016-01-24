@@ -9,7 +9,7 @@ layout: default
       <div class="col s12" itemscope itemtype="http://schema.org/BreadcrumbList">
         <a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}#" class="breadcrumb"><i class="material-icons">home</i></a>
         <a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}codebase#" class="breadcrumb">Code Base</a>
-        <a href="#" class="breadcrumb">{{ page.title }}</a>
+        <a href="#" class="breadcrumb hide-on-small-and-down">{{ page.title }}</a>
       </div>
     </div>
   </nav>
@@ -22,6 +22,38 @@ layout: default
 
     {{ content }}
 
+    <ul class="container pager">
+      {% assign flag = false %}
+      {% assign micro-site = page.categories[0] %}
+      <li class="previous">
+        {% for post in site.categories[micro-site] %}
+
+        {% if flag %}
+        <a href="{{ post.url }}" title="Previous Post: {{ post.title }}">Previous</a>
+        {% break %}
+        {% endif %}
+        {% if post.url == page.url %}
+        {% assign flag = true %}
+        {% endif %}
+
+        {% endfor %}
+      </li>
+
+      {% assign flag = false %}
+      <li class="next">
+        {% for post in site.categories[micro-site] reversed %}
+
+        {% if flag %}
+        <a href="{{ post.url }}" title="Previous Post: {{ post.title }}">Next</a>
+        {% break %}
+        {% endif %}
+        {% if post.url == page.url %}
+        {% assign flag = true %}
+        {% endif %}
+
+        {% endfor %}
+      </li>
+    </ul>
   </article>
 </main>
 
