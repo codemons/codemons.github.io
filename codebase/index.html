@@ -32,14 +32,19 @@ description: Collection of algorithms
               <script>
                 $('#search').on('keyup', function () {
 
-                  var word = $(this).val();
+                  var keywords = $(this).val().split(' ');
 
                   $('#codebase-list .col').each(function(){
-                     if($(this).text().toLowerCase().indexOf(word.toLowerCase()) === -1){
-                       $(this).hide();
-                     } else{
-                       $(this).show();
-                     }
+
+                    var card = $(this);
+                    card.hide();
+
+                    $.each(keywords, function(index, word){
+                      if(card.text().toLowerCase().indexOf(word.toLowerCase()) !== -1){
+                        card.show();
+                      }
+                    });
+
                   });
                 })
               </script>
