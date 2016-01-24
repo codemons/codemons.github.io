@@ -130,7 +130,7 @@ p {
 #header-logo {
   position: relative;
   top: 0.8rem;
-  height: 3.1rem; 
+  height: 3.1rem;
 }
 
 #index-banner{
@@ -145,10 +145,10 @@ p {
 #index-banner .section .container{
 	margin-top: 350px;
 }
-  
+
 
 @media only screen and (max-width : 992px) {
-  
+
   #index-banner {
     min-height: 700px;
   }
@@ -162,7 +162,7 @@ p {
 }
 
 .move-next{
-	position:absolute; left:48%; bottom:6%;
+	position:absolute; width:100%; bottom:6%;
 }
 
 @media only screen and (max-width : 600px) {
@@ -170,7 +170,7 @@ p {
   #index-banner {
     min-height: 620px;
   }
-  
+
   #index-banner .section {
     position: absolute;
     top: 56px;
@@ -178,7 +178,7 @@ p {
   #index-banner .section .container{
 	margin-top: 150px;
   }
-  
+
 }
 
 .icon-block {
@@ -229,4 +229,3 @@ main {
   background-color: #f5f2f0;
   max-height:600px;
 }
-  
