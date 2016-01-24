@@ -1,35 +1,29 @@
 ---
 layout: default
+title: Code Base
+description: Collection of algorithms
 ---
-
 <main class="grey lighten-3">
   {% include components/nav.html %}
   <nav class="teal lighten-2">
     <div class="nav-wrapper container">
       <div class="col s12" itemscope itemtype="http://schema.org/BreadcrumbList">
       <a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}#" class="breadcrumb"><i class="material-icons">home</i></a>
-      <a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}products#" class="breadcrumb">Products</a>
-      <a href="#" class="breadcrumb">{{ page.title }}</a>
+      <a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}codebase/#" class="breadcrumb">Code Base</a>
     </div>
     </div>
   </nav>
 
   <article  itemscope itemtype="http://schema.org/Article">
     <section class="container">
-      <h3 itemprop=name>{{ page.title }}</h3>
-	  {% include components/author.html %}
+      <h3 itemprop=name class="margin-bottom-1px">{{ page.title }}</h3>
+      <h6 class="grey-text text-darken-1 thin margin-left-3px">{{ page.description }}</h6>
     </section>
 
-    {{ content }}
+    <section id="post-list" class="container">
+		 <h5>Coming soon</h5>
+	</section>
 
   </article>
 </main>
-
-<section class="section grey lighten-3">
-  <div class="container">
-    {% include disqus.html %}
-  </div>
-</section>
-
 {% include components/footer-small.html %}
-
