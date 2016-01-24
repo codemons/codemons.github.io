@@ -32,5 +32,19 @@
 		}
 	});
 
+  $("#owl-index").owlCarousel({
+    autoPlay : 5000,
+    stopOnHover : true,
+    paginationSpeed : 1000,
+    singleItem : true,
+    autoHeight : false,
+    pagination: false
+  });
+
+  var owlWrapperHeight = parseInt($('.owl-wrapper').css('height'),10);
+  $('.owl-item').each(function(){
+    $(this).css('padding-top',(owlWrapperHeight-parseInt($(this).css('height'), 10))/2 + 'px');
+  });
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space
