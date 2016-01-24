@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3da0acd9-bd41-4dc2-ad53-3ad11f967f58" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/adsence-box.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/components/codebase-highlighter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codebase/_posts/2014-12-28-anagram.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/head-imports.html" afterPath="$PROJECT_DIR$/_includes/head-imports.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/scripts.html" afterPath="$PROJECT_DIR$/_includes/scripts.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/index.html" afterPath="$PROJECT_DIR$/codebase/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products/_posts/2016-01-17-age-calculator.html" afterPath="$PROJECT_DIR$/products/_posts/2016-01-17-age-calculator.html" />
     </list>
     <ignored path="codemons.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codebase/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.451613">
-              <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.43125734">
+              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -73,8 +66,8 @@
       <file leaf-file-name="2014-12-28-anagram.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/codebase/_posts/2014-12-28-anagram.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.645162">
-              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+            <state vertical-scroll-proportion="-1.4193548">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -104,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-01-17-age-calculator.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016-01-17-age-calculator.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/products/_posts/2016-01-17-age-calculator.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33607522">
+            <state vertical-scroll-proportion="-4.967742">
               <caret line="15" column="118" selection-start-line="15" selection-start-column="118" selection-end-line="15" selection-end-column="118" />
               <folding />
             </state>
@@ -127,8 +120,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/products/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.064516">
-              <caret line="43" column="12" selection-start-line="21" selection-start-column="4" selection-end-line="43" selection-end-column="12" />
+            <state vertical-scroll-proportion="-16.096775">
+              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -177,13 +170,13 @@
         <option value="$PROJECT_DIR$/_layouts/product.html" />
         <option value="$PROJECT_DIR$/_layouts/codebase.html" />
         <option value="$PROJECT_DIR$/products/index.html" />
-        <option value="$PROJECT_DIR$/codebase/index.html" />
         <option value="$PROJECT_DIR$/_includes/scripts.html" />
         <option value="$PROJECT_DIR$/_includes/head-imports.html" />
         <option value="$PROJECT_DIR$/_includes/adsence-box.html" />
         <option value="$PROJECT_DIR$/codebase/_posts/2014-12-28-anagram.html" />
         <option value="$PROJECT_DIR$/_includes/components/codebase-highlighter.html" />
         <option value="$PROJECT_DIR$/products/_posts/2016-01-17-age-calculator.html" />
+        <option value="$PROJECT_DIR$/codebase/index.html" />
       </list>
     </option>
   </component>
@@ -795,14 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/products/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.064516">
-          <caret line="43" column="12" selection-start-line="21" selection-start-column="4" selection-end-line="43" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/scripts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7096774">
@@ -837,14 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codebase/_posts/2014-12-28-anagram.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.645162">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/adsence-responsive.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.806452">
@@ -852,14 +829,6 @@
           <folding>
             <element signature="n#style#0;n#ins#0;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codebase/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.451613">
-          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,8 +842,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/products/_posts/2016-01-17-age-calculator.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33607522">
+        <state vertical-scroll-proportion="-4.967742">
           <caret line="15" column="118" selection-start-line="15" selection-start-column="118" selection-end-line="15" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codebase/_posts/2014-12-28-anagram.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4193548">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.096775">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codebase/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43125734">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
           <folding />
         </state>
       </provider>
