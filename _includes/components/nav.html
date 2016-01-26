@@ -1,13 +1,13 @@
 <div class="navbar-fixed" role="navigation">
   <!-- Dropdown Structure -->
   <ul id="nav-links" class="dropdown-content">
-    <li><a href="/products#">Products</a></li>
-    <li><a href="/codebase#">Code Base</a></li>
+    <li><a href="/products#top">Products</a></li>
+    <li><a href="/codebase#top">Code Base</a></li>
   </ul>
 
   <nav class="{%if page.index%}teal{%else%}white{%endif%}">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="{{site.baseurl}}{% if page.index != true %}/{% endif %}#" class="brand-logo {%if page.index != true%}teal-text{%endif%}""><img id=header-logo title=Logo src="{{site.img}}/logo.png"/> <span class="site-title">{{site.title}}</span></a>
+      <a id="logo-container" href="{{site.baseurl}}{% if page.index != true %}/{% endif %}#top" class="brand-logo {%if page.index != true%}teal-text{%endif%}""><img id=header-logo title=Logo src="{{site.img}}/logo.png"/> <span class="site-title">{{site.title}}</span></a>
 
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons {%if page.index != true%}teal-text{%endif%}">menu</i></a>
       <ul class="right hide-on-med-and-down">
@@ -15,16 +15,16 @@
         <!-- Dropdown Trigger -->
         <li><a class="dropdown-button {%if page.index != true%}teal-text{%endif%}" href="#!" data-activates="nav-links"><i class="material-icons right">arrow_drop_down</i> Works</a></li>
 
-        <li><a href="/team#" class="{%if page.index != true%}teal-text{%endif%}"><i class="material-icons left">people</i> Team</a></li>
-        <li><a href="/blog#" class="{%if page.index != true%}teal-text{%endif%}"><i class="material-icons left">library_books</i> Blog</a></li>
+        <li><a href="/team#top" class="{%if page.index != true%}teal-text{%endif%}"><i class="material-icons left">people</i> Team</a></li>
+        <li><a href="/blog#top" class="{%if page.index != true%}teal-text{%endif%}"><i class="material-icons left">library_books</i> Blog</a></li>
         <li><a href="{%if page.index != true%}/{%endif%}#contact" class="{%if page.index != true%}teal-text{%endif%}"><i class="material-icons left">send</i> Contact</a></li>
 
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="/products#"><i class="material-icons left">apps</i>Products</a></li>
-        <li><a href="/codebase#"><i class="material-icons left">code</i>Code Base</a></li>
-        <li><a href="/team#"><i class="material-icons left">people</i> Team</a></li>
-        <li><a href="/blog#"><i class="material-icons left">library_books</i> Blog</a></li>
+        <li><a href="/products#top"><i class="material-icons left">apps</i>Products</a></li>
+        <li><a href="/codebase#top"><i class="material-icons left">code</i>Code Base</a></li>
+        <li><a href="/team#top"><i class="material-icons left">people</i> Team</a></li>
+        <li><a href="/blog#top"><i class="material-icons left">library_books</i> Blog</a></li>
         <li><a href="{%if page.index != true%}/{%endif%}#contact"><i class="material-icons left">send</i> Contact Us</a></li>
       </ul>
     </div>

@@ -1,0 +1,18 @@
+<pre class="min-height-80px"><code id="{{include.id}}" class="{{include.prism}}"><div class="preloader-wrapper small active"><div class="spinner-layer spinner-green-only"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div></code></pre>
+<script>
+  $.ajax({
+    type: "GET",
+    url: "https://raw.githubusercontent.com/{{include.repo}}/master/{{include.program}}",
+    async: false,
+    success: function(data){
+      $('#{{include.id}}').html(data.replace(/</g,'&lt;').replace(/>/g,'&gt;'));
+    },
+    error: function(){
+      $('#{{include.id}}').html('Loading failed, please download to view the code.');
+    }
+  })
+</script>
+<p class="margin-top-20px">
+  <a href="https://github.com/{{include.repo}}/blob/master/{{include.program}}" class="btn black margin-right-10px"><i class="fa fa-github"></i></a>
+  <a href="https://raw.githubusercontent.com/{{include.repo}}/master/{{ include.program}}" class="btn"><span class="fa fa-download"></span> Download</a>
+</p>
