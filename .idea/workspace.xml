@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3da0acd9-bd41-4dc2-ad53-3ad11f967f58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/_posts/2014-12-28-sorting-algorithms-bubble-sort.html" afterPath="$PROJECT_DIR$/codebase/_posts/2014-12-28-sorting-algorithms-bubble-sort.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/_posts/2014-12-28-sorting-algorithms-insertion-sort.html" afterPath="$PROJECT_DIR$/codebase/_posts/2014-12-28-sorting-algorithms-insertion-sort.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/_posts/2015-01-02-sorting-algorithms-merge-sort.html" afterPath="$PROJECT_DIR$/codebase/_posts/2015-01-02-sorting-algorithms-merge-sort.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/_posts/2015-01-02-sorting-algorithms-quick-sort.html" afterPath="$PROJECT_DIR$/codebase/_posts/2015-01-02-sorting-algorithms-quick-sort.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/_posts/2015-01-02-sorting-algorithms-selection-sort.html" afterPath="$PROJECT_DIR$/codebase/_posts/2015-01-02-sorting-algorithms-selection-sort.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/_posts/2015-01-03-greatest-common-divisor.html" afterPath="$PROJECT_DIR$/codebase/_posts/2015-01-03-greatest-common-divisor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/_posts/2015-01-05-searching-algorithms-binary-search.html" afterPath="$PROJECT_DIR$/codebase/_posts/2015-01-05-searching-algorithms-binary-search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/_posts/2015-01-05-searching-algorithms-linear-search.html" afterPath="$PROJECT_DIR$/codebase/_posts/2015-01-05-searching-algorithms-linear-search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/_posts/2015-08-25-random-number-generator.html" afterPath="$PROJECT_DIR$/codebase/_posts/2015-08-25-random-number-generator.html" />
-    </list>
+    <list default="true" id="3da0acd9-bd41-4dc2-ad53-3ad11f967f58" name="Default" comment="" />
     <ignored path="codemons.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
