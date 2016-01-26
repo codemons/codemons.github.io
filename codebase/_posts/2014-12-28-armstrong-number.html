@@ -23,7 +23,72 @@ tags: [c]
   <div class="row">
     <div class="col m12 s12">
       <h3>Code</h3>
-      {% include components/codebase-highlighter.html project='c' program='armstrong-number' prismjs='language-c' %}
+      <ul class="tabs z-depth-1" style="overflow-x: hidden">
+        <li class="tab col s3"><a class="active" href="#tab-c">C</a></li>
+        <li class="tab col s3"><a href="#tab-js">JavaScript</a></li>
+      </ul>
+
+      <div id="tab-c">
+        {% include components/github-code-highlighter.html id="code-c" program='armstrong-number/armstrong-number.c' repo='codemons/codebase' prism='language-c' %}
+      </div>
+      <div id="tab-js">
+        {% include components/github-code-highlighter.html id="code-js" program='armstrong-number/armstrong-number.js' repo='codemons/codebase' prism='language-javascript' %}
+      </div>
     </div>
   </div>
+
+  <div class="clear"></div>
+  <div class="row">
+    <div class="col m6 s12">
+      <h3>Demo</h3>
+
+      <div class="card hoverable">
+        <form id="leap-form" role="form" method="get" action="javascript:demo()">
+          <div class="card-content">
+            <div class="row">
+              <div class="input-field col m7">
+                <input id="num" type="number" autocomplete="off" required="required">
+                <label for="num">Enter a Number</label>
+              </div>
+              <div id="output" class="input-field col m5">
+                &nbsp;
+              </div>
+            </div>
+          </div>
+          <div class="card-action">
+            <button type="submit" id="submit" class="btn waves-effect">Check</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function isArmstrong(num){
+
+      var temp = num, sum = 0, digit;
+
+      while (temp !== 0) {
+        digit = parseInt(temp % 10);
+        sum = sum + (digit * digit * digit);
+        temp = parseInt(temp/10);
+      }
+
+      if(num === sum)
+        return true; // Success
+
+      return false; // Failure
+    }
+
+    function demo(){
+      var num = parseInt($('#num').val());
+      if(isArmstrong(num)){
+        $('#output').html('<span class="teal-text"><i class="material-icons left">check</i> Armstrong Number</span>');
+      } else {
+        $('#output').html('<span class="red-text"><i class="material-icons left">close</i> not an Armstrong Number</span>');
+      }
+
+    }
+  </script>
 </div>
