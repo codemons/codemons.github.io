@@ -7,14 +7,14 @@ description: Collection of algorithms
   {% include components/nav.html %}
   <nav class="teal lighten-2">
     <div class="nav-wrapper container">
-      <div class="col s12" itemscope itemtype="http://schema.org/BreadcrumbList">
-      <a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}#" class="breadcrumb"><i class="material-icons">home</i></a>
-      <a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}codebase/#" class="breadcrumb">Code Base</a>
+      <div class="col s12" itemscope itemtype=http://schema.org/BreadcrumbList>
+      <a href="{% if page.index != true %}/{% endif %}#top" class="breadcrumb"><i class="material-icons">home</i></a>
+      <a href="{% if page.index != true %}/{% endif %}codebase/#top" class="breadcrumb">Code Base</a>
     </div>
     </div>
   </nav>
 
-  <article  itemscope itemtype="http://schema.org/Article">
+  <article  itemscope itemtype=http://schema.org/Article>
     <section class="container">
       <h3 itemprop=name class="margin-bottom-1px">{{ page.title }}</h3>
       <h6 class="grey-text text-darken-1 thin margin-left-3px">{{ page.description }}</h6>
@@ -30,24 +30,27 @@ description: Collection of algorithms
               <label for="search" data-error="wrong" data-success="right" data-default="wrong" ><i class="material-icons">search</i></label>
 
               <script>
-                $('#search').on('keyup', function () {
+                (function(){
+                  $('#search').on('keyup', function () {
 
-                  var keywords = $(this).val().split(' ');
+                    var keywords = $(this).val().split(' ');
 
-                  $('#codebase-list .col').each(function(){
+                    $('#codebase-list').find('.col').each(function(){
+                      var card = $(this);
+                      card.hide();
 
-                    var card = $(this);
-                    card.hide();
+                      $.each(keywords, function(index, word){
+                        if(card.text().toLowerCase().indexOf(word.toLowerCase()) !== -1){
+                          card.show();
+                        }
+                      });
 
-                    $.each(keywords, function(index, word){
-                      if(card.text().toLowerCase().indexOf(word.toLowerCase()) !== -1){
-                        card.show();
-                      }
                     });
-
                   });
-                })
+                }());
               </script>
+
+              <p id="counter" class="hide-on-small-and-down">Programs count :: <span class="red-text timer">{{site.categories['codebase'].size}}</span></p>
             </div>
           </div>
 
@@ -57,7 +60,7 @@ description: Collection of algorithms
           <div class="row wow fadeInUp">
 
             <div class="row">
-			{% assign sorted_posts = (site.categories['codebase'] | sort: 'title') %}
+			        {% assign sorted_posts = (site.categories['codebase'] | sort: 'title') %}
               {% for post in sorted_posts %}
 
                 <div class="col s12 m4">
@@ -69,7 +72,7 @@ description: Collection of algorithms
                       <p>{{ post.description }}</p>
                     </div>
                     <div class="card-action">
-                      <a href="{{ site.baseurl }}{{ post.url }}#top" class="btn">Read More</a>
+                      <a href="{{site.baseurl}}{{post.url}}#top" class="btn">Read More</a>
                     </div>
                   </div>
                 </div>

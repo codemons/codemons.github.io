@@ -1,0 +1,95 @@
+---
+layout: codebase
+author: shivaji
+description: Program to check leap year
+keywords: ['leap year', 'c program']
+tags: [c]
+---
+<div class="container">
+  <div class="row">
+    <div class="col l9 s12">
+      <p>This is program to check whether a given year is <strong>Leap Year</strong> or not.</p>
+
+      <blockquote>{{ page.description }}</blockquote>
+
+    </div>
+    <div class="col l3 s12 wow fadeInRight center">
+      {% include adsence-box.html %}
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="row">
+    <div class="col m12 s12">
+      <h3>Code</h3>
+      <ul class="tabs z-depth-1" style="overflow-x: hidden">
+        <li class="tab col s3"><a class="active" href="#tab-c">C</a></li>
+        <li class="tab col s3"><a href="#tab-js">JavaScript</a></li>
+      </ul>
+
+      <div id="tab-c">
+        {% include components/github-code-highlighter.html id="code-c" program='leap-year/leap-year.c' repo='codemons/codebase' prism='language-c' %}
+      </div>
+      <div id="tab-js">
+        {% include components/github-code-highlighter.html id="code-js" program='leap-year/leap-year.js' repo='codemons/codebase' prism='language-c' %}
+      </div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+  <div class="row">
+    <div class="col m6 s12">
+      <h3>Demo</h3>
+
+      <div class="card hoverable">
+        <form id="leap-form" role="form" method="get" action="javascript:demo()">
+        <div class="card-content">
+          <div class="row">
+            <div class="input-field col m7">
+              <input id="year" type="number" autocomplete="off" required="required">
+              <label for="year">Enter year</label>
+            </div>
+            <div id="output" class="input-field col m5">
+              &nbsp;
+            </div>
+          </div>
+        </div>
+        <div class="card-action">
+          <button type="submit" id="submit" class="btn waves-effect">Check</button>
+        </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function isLeapYear(year) {
+
+      if (year % 4 === 0) {
+        if (year % 100 === 0) { // Checking for a century year
+          if (year % 400 === 0) {
+            return true;
+          }
+          else {
+            return false;
+          }
+        } else {
+          return true;
+        }
+      } else {
+        return false;
+      }
+
+    }
+
+    function demo(){
+      var year = parseInt($('#year').val());
+      if(isLeapYear(year)){
+        $('#output').html('<span class="teal-text"><i class="material-icons left">check</i> Leap Year</span>');
+      } else {
+        $('#output').html('<span class="red-text"><i class="material-icons left">close</i> not a Leap Year</span>');
+      }
+
+    }
+  </script>
+</div>
