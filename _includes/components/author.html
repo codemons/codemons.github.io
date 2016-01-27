@@ -4,3 +4,9 @@
    <span class="wow bounceIn">Posted on {{ page.date | date: "%B %-d, %Y" }} by <a target="_blank" href="http://shivajivarma.com/about?rel=author" rel="author">{{site.author.name}}</a></span>
 </div>
 {% endif %}
+{% if post.author == 'shivaji' %}
+<div class="chip">
+  <img src="{{site.img}}/team/shivaji-icon.jpg"  alt="Shivaji Varma" class="wow rotateIn">
+  <span class="wow bounceIn">Posted on {{ post.date | date: "%B %-d, %Y" }} by <a target="_blank" href="http://shivajivarma.com/about?rel=author" rel="author">{{site.author.name}}</a></span>
+</div>
+{% endif %}
