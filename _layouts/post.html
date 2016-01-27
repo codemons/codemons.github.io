@@ -3,16 +3,33 @@ layout: default
 mobileads: true
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<main class="grey lighten-3">
+  {% include components/nav.html %}
+  <nav class="teal lighten-2">
+    <div class="nav-wrapper container">
+      <div class="col s12" itemscope itemtype="http://schema.org/BreadcrumbList">
+      <a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}#top" class="breadcrumb"><i class="material-icons">home</i></a>
+      <a href="{{ site.baseurl }}{% if page.index != true %}/{% endif %}blog#top" class="breadcrumb">Blog</a>
+      <a href="#" class="breadcrumb hide-on-small-and-down">{{ page.title }}</a>
+    </div>
+    </div>
+  </nav>
 
-  <div class="entry">
+  <article  itemscope itemtype="http://schema.org/Article">
+    <section class="container">
+      <h3 itemprop=name>{{ page.title }}</h3>
+	  {% include components/author.html %}
+    </section>
+
     {{ content }}
-  </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+  </article>
+</main>
 
-  {% include disqus.html %}
-</article>
+<section class="section grey lighten-3">
+  <div class="container">
+    {% include disqus.html %}
+  </div>
+</section>
+
+{% include components/footer-small.html %}
