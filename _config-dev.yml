@@ -1,0 +1,3 @@
+sass:
+  style: expanded #expanded # You might prefer to minify using :compressed
+  sass_dir: assets/css/_scss

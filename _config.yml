@@ -25,6 +25,10 @@ author:
   twitter:        shivaji_varma
   youtube:        enchantingstrings
 
+team:
+  shivaji: Shivaji Varma
+  venky: Venkatesh
+
 #Assets paths
 css: /assets/css
 js: /assets/js
