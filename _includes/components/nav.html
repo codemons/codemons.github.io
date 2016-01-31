@@ -1,9 +1,9 @@
 <div class="navbar-fixed" role="navigation">
   <!-- Dropdown Structure -->
-  <ul id="nav-links" class="dropdown-content">
+  <!--ul id="nav-links" class="dropdown-content">
     <li><a href="/products#top">Products</a></li>
     <li><a href="/codebase#top">Code Base</a></li>
-  </ul>
+  </ul-->
 
   <nav class="{%if page.index%}teal{%else%}white{%endif%}">
     <div class="nav-wrapper container">
@@ -13,8 +13,10 @@
       <ul class="right hide-on-med-and-down">
 
         <!-- Dropdown Trigger -->
-        <li><a class="dropdown-button {%if page.index != true%}teal-text{%endif%}" href="#!" data-activates="nav-links"><i class="material-icons right">arrow_drop_down</i> Works</a></li>
+        <!--li><a class="dropdown-button {%if page.index != true%}teal-text{%endif%}" href="#!" data-activates="nav-links"><i class="material-icons right">arrow_drop_down</i> Works</a></li-->
 
+        <li><a href="/products#top" class="{%if page.index != true%}teal-text{%endif%}">Products</a></li>
+        <li><a href="/codebase#top" class="{%if page.index != true%}teal-text{%endif%}">Code Base</a></li>
         <li><a href="/blog#top" class="{%if page.index != true%}teal-text{%endif%}">Blog</a></li>
         <li><a href="/team#top" class="{%if page.index != true%}teal-text{%endif%}">Team</a></li>
         <li><a href="{%if page.index != true%}/{%endif%}#contact" class="{%if page.index != true%}teal-text{%endif%}">Contact</a></li>
