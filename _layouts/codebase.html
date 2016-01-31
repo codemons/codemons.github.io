@@ -1,5 +1,6 @@
 ---
 layout: default
+plugins: ['fblike', 'gplus']
 ---
 
 <main class="color-light">
@@ -23,6 +24,17 @@ layout: default
     {{ content }}
 
     {% include components/post-tags.html %}
+
+    <div class="container">
+      <!-- Place this tag where you want the +1 button to render. -->
+      <div class="left"><div class="g-plusone" data-href="{{ page.url }}"></div></div>
+
+      <!-- facebook like -->
+      <div class="fb-like left" data-href="{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+      <div class="clear"></div>
+    </div>
+
+
     {% include components/pager.html %}
   </article>
 </main>
