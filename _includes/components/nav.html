@@ -15,12 +15,24 @@
         <!-- Dropdown Trigger -->
         <!--li><a class="dropdown-button {%if page.index != true%}teal-text{%endif%}" href="#!" data-activates="nav-links"><i class="material-icons right">arrow_drop_down</i> Works</a></li-->
 
-        <li><a href="/products#top" class="{%if page.index != true%}teal-text{%endif%}">Products</a></li>
-        <li><a href="/codebase#top" class="{%if page.index != true%}teal-text{%endif%}">Code Base</a></li>
-        <li><a href="/blog#top" class="{%if page.index != true%}teal-text{%endif%}">Blog</a></li>
-        <li><a href="/team#top" class="{%if page.index != true%}teal-text{%endif%}">Team</a></li>
-        <li><a href="{%if page.index != true%}/{%endif%}#contact" class="{%if page.index != true%}teal-text{%endif%}">Contact</a></li>
-        <li><a href="/music" class="{%if page.index != true%}teal-text{%endif%}"><i class="material-icons">library_music</i></a></li>
+        <li class="{%if page.title == 'Products'%}active{%endif%}">
+          <a href="/products#top" class="{%if page.index != true%}teal-text{%endif%}">Products</a>
+        </li>
+        <li class="{%if page.title == 'Code Base'%}active{%endif%}">
+          <a href="/codebase#top" class="{%if page.index != true%}teal-text{%endif%}">Code Base</a>
+        </li>
+        <li class="{%if page.title == 'Blog'%}active{%endif%}">
+          <a href="/blog#top" class="{%if page.index != true%}teal-text{%endif%}">Blog</a>
+        </li>
+        <li class="{%if page.title == 'Team'%}active{%endif%}">
+          <a href="/team#top" class="{%if page.index != true%}teal-text{%endif%}">Team</a>
+        </li>
+        <li>
+          <a href="{%if page.index != true%}/{%endif%}#contact" class="{%if page.index != true%}teal-text{%endif%}">Contact</a>
+        </li>
+        <li class="{%if page.title == 'Music'%}active{%endif%}">
+          <a href="/music" class="{%if page.index != true%}teal-text{%endif%}"><i class="material-icons">library_music</i></a>
+        </li>
 
       </ul>
       <ul class="side-nav" id="mobile-demo">
