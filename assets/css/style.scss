@@ -111,7 +111,7 @@ p {
   line-height: 2rem;
 }
 
-a{cursor:url($img + '/icons/hand.png'), pointer;}
+a, .btn{cursor:url($img + '/icons/hand.png'), pointer;}
 
 .button-collapse {
   color: white;
