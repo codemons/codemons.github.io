@@ -4,6 +4,7 @@
 {% include_relative lib/materialize.js %}
 {% include_relative lib/prism/prism.js %}
 {% include_relative lib/prism/components/prism-c.min.js %}
+{% include_relative lib/prism/components/prism-java.min.js %}
 {% include_relative lib/prism/components/prism-python.min.js %}
 {% include_relative lib/prism/components/prism-sql.min.js %}
 {% include_relative lib/prism/components/prism-bash.min.js %}
