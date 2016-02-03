@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3da0acd9-bd41-4dc2-ad53-3ad11f967f58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/_posts/2016-01-29-spiral-matrix.html" afterPath="$PROJECT_DIR$/codebase/_posts/2016-01-29-spiral-matrix.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/components/github-code-highlighter.html" afterPath="$PROJECT_DIR$/_includes/components/github-code-highlighter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/_posts/2015-01-05-searching-algorithms-binary-search.html" afterPath="$PROJECT_DIR$/codebase/_posts/2015-01-05-searching-algorithms-binary-search.html" />
     </list>
     <ignored path="codemons.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,21 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="2016-01-29-spiral-matrix.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016-01-29-spiral-matrix.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/codebase/_posts/2016-01-29-spiral-matrix.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56874263">
-              <caret line="22" column="121" selection-start-line="22" selection-start-column="121" selection-end-line="22" selection-end-column="121" />
+            <state vertical-scroll-proportion="-6.387097">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <file leaf-file-name="2015-01-05-searching-algorithms-binary-search.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codebase/_posts/2015-01-05-searching-algorithms-binary-search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="57" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="57" />
+            <state vertical-scroll-proportion="-14.67742">
+              <caret line="26" column="93" selection-start-line="26" selection-start-column="93" selection-end-line="26" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -48,17 +48,17 @@
         <entry file="file://$PROJECT_DIR$/codebase/_posts/2014-12-28-anagram.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-18.451612">
-              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+              <caret line="26" column="35" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="github-code-highlighter.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="github-code-highlighter.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_includes/components/github-code-highlighter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="81" />
+            <state vertical-scroll-proportion="0.051703878">
+              <caret line="2" column="173" selection-start-line="2" selection-start-column="173" selection-end-line="2" selection-end-column="173" />
               <folding />
             </state>
           </provider>
@@ -148,7 +148,6 @@
         <option value="$PROJECT_DIR$/_layouts/page.html" />
         <option value="$PROJECT_DIR$/products/index.html" />
         <option value="$PROJECT_DIR$/blog/_posts/2016-01-27-first-post.html" />
-        <option value="$PROJECT_DIR$/_includes/components/github-code-highlighter.html" />
         <option value="$PROJECT_DIR$/_includes/components/pager.html" />
         <option value="$PROJECT_DIR$/blog/index.html" />
         <option value="$PROJECT_DIR$/_includes/components/post-tags.html" />
@@ -158,7 +157,6 @@
         <option value="$PROJECT_DIR$/codebase/_posts/2015-01-02-sorting-algorithms-quick-sort.html" />
         <option value="$PROJECT_DIR$/codebase/_posts/2015-01-02-sorting-algorithms-selection-sort.html" />
         <option value="$PROJECT_DIR$/codebase/_posts/2015-01-03-greatest-common-divisor.html" />
-        <option value="$PROJECT_DIR$/codebase/_posts/2015-01-05-searching-algorithms-binary-search.html" />
         <option value="$PROJECT_DIR$/codebase/_posts/2015-01-05-searching-algorithms-linear-search.html" />
         <option value="$PROJECT_DIR$/codebase/_posts/2015-08-25-random-number-generator.html" />
         <option value="$PROJECT_DIR$/codebase/_posts/2016-01-26-palindrome.html" />
@@ -190,6 +188,8 @@
         <option value="$PROJECT_DIR$/_layouts/codebase.html" />
         <option value="$PROJECT_DIR$/codebase/_posts/2014-12-28-anagram.html" />
         <option value="$PROJECT_DIR$/codebase/_posts/2016-01-29-spiral-matrix.html" />
+        <option value="$PROJECT_DIR$/codebase/_posts/2015-01-05-searching-algorithms-binary-search.html" />
+        <option value="$PROJECT_DIR$/_includes/components/github-code-highlighter.html" />
       </list>
     </option>
   </component>
@@ -438,17 +438,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\codemons\codemons.com\assets\css\lib" />
-      <recent name="F:\codemons\codemons.com\assets\js" />
-      <recent name="F:\codemons\codemons.com\assets\js\lib" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\codemons\codemons.com" />
       <recent name="F:\codemons\codemons.com\assets\css\lib" />
       <recent name="F:\codemons\codemons.com\codebase\_posts" />
       <recent name="F:\codemons\codemons.com\blog" />
       <recent name="F:\codemons\codemons.com\_includes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\codemons\codemons.com\assets\css\lib" />
+      <recent name="F:\codemons\codemons.com\assets\js" />
+      <recent name="F:\codemons\codemons.com\assets\js\lib" />
     </key>
   </component>
   <component name="RunManager">
@@ -593,13 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.548387">
           <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codebase/_posts/2015-01-05-searching-algorithms-binary-search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2580647">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -904,10 +897,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/components/github-code-highlighter.html">
+    <entry file="file://$PROJECT_DIR$/codebase/_posts/2016-01-29-spiral-matrix.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="81" />
+        <state vertical-scroll-proportion="-6.387097">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -915,15 +908,23 @@
     <entry file="file://$PROJECT_DIR$/codebase/_posts/2014-12-28-anagram.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.451612">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codebase/_posts/2016-01-29-spiral-matrix.html">
+    <entry file="file://$PROJECT_DIR$/codebase/_posts/2015-01-05-searching-algorithms-binary-search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56874263">
-          <caret line="22" column="121" selection-start-line="22" selection-start-column="121" selection-end-line="22" selection-end-column="121" />
+        <state vertical-scroll-proportion="-14.67742">
+          <caret line="26" column="93" selection-start-line="26" selection-start-column="93" selection-end-line="26" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/components/github-code-highlighter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.051703878">
+          <caret line="2" column="173" selection-start-line="2" selection-start-column="173" selection-end-line="2" selection-end-column="173" />
           <folding />
         </state>
       </provider>

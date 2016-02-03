@@ -15,7 +15,6 @@ tags: [C, Search]
 
       <blockquote>{{ page.description }}</blockquote>
 
-
     </div>
     <div class="col l3 s12 wow fadeInRight center">
       {% include adsence-box.html %}
@@ -25,7 +24,15 @@ tags: [C, Search]
   <div class="row">
     <div class="col m12 s12">
       <h3>Code</h3>
-      {% include components/github-code-highlighter.html id="code-c" program='searching-algorithms/binary-search/binary-search.c' repo='codemons/codebase' prism='language-c' %}
+      {% include components/github-code-highlighter.html id="git-binary-search" program='src/searching-algorithms/binary-search/binary-search.c' repo='codemons/codebase-c' prism='language-c' %}
+      <h3></h3>
+      <pre><code class="language-c">Enter size of the array :: 8
+
+Enter elements of the array in ascending order :: 1 5 7 11 12 56 102 156
+
+Enter the number to be searched :: 102
+
+102 is present at location 7.</code></pre>
     </div>
   </div>
 </div>
