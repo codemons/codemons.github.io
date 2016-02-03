@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3da0acd9-bd41-4dc2-ad53-3ad11f967f58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/codebase/SprialMatrix.png" afterPath="$PROJECT_DIR$/assets/img/codebase/SprialMatrix.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/_posts/2014-12-28-anagram.html" afterPath="$PROJECT_DIR$/codebase/_posts/2014-12-28-anagram.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/_posts/2016-01-29-spiral-matrix.html" afterPath="$PROJECT_DIR$/codebase/_posts/2016-01-29-spiral-matrix.html" />
     </list>
     <ignored path="codemons.com.iws" />
@@ -26,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="2016-01-29-spiral-matrix.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2016-01-29-spiral-matrix.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codebase/_posts/2016-01-29-spiral-matrix.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.870968">
-              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.56874263">
+              <caret line="22" column="121" selection-start-line="22" selection-start-column="121" selection-end-line="22" selection-end-column="121" />
               <folding />
             </state>
           </provider>
@@ -46,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-12-28-anagram.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2014-12-28-anagram.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/codebase/_posts/2014-12-28-anagram.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67215043">
+            <state vertical-scroll-proportion="-18.451612">
               <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
               <folding />
             </state>
@@ -59,7 +57,7 @@
       <file leaf-file-name="github-code-highlighter.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/components/github-code-highlighter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.2580647">
+            <state vertical-scroll-proportion="0.0">
               <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="81" />
               <folding />
             </state>
@@ -190,8 +188,8 @@
         <option value="$PROJECT_DIR$/_includes/disqus.html" />
         <option value="$PROJECT_DIR$/_includes/scripts.html" />
         <option value="$PROJECT_DIR$/_layouts/codebase.html" />
-        <option value="$PROJECT_DIR$/codebase/_posts/2016-01-29-spiral-matrix.html" />
         <option value="$PROJECT_DIR$/codebase/_posts/2014-12-28-anagram.html" />
+        <option value="$PROJECT_DIR$/codebase/_posts/2016-01-29-spiral-matrix.html" />
       </list>
     </option>
   </component>
@@ -231,8 +229,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -644,7 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -676,7 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,7 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -692,7 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,7 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.044776">
           <caret line="382" column="21" selection-start-line="382" selection-start-column="19" selection-end-line="382" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -708,7 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="184.79411">
           <caret line="5" column="93871" selection-start-line="5" selection-start-column="93854" selection-end-line="5" selection-end-column="93871" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-23.419355">
           <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,7 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="47" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -917,17 +904,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codebase/_posts/2016-01-29-spiral-matrix.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.870968">
-          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/components/github-code-highlighter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2580647">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="81" />
           <folding />
         </state>
@@ -935,8 +914,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codebase/_posts/2014-12-28-anagram.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67215043">
+        <state vertical-scroll-proportion="-18.451612">
           <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codebase/_posts/2016-01-29-spiral-matrix.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56874263">
+          <caret line="22" column="121" selection-start-line="22" selection-start-column="121" selection-end-line="22" selection-end-column="121" />
           <folding />
         </state>
       </provider>
