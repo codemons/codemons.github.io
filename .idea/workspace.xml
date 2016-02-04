@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3da0acd9-bd41-4dc2-ad53-3ad11f967f58" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/_posts/2016-02-04-how-to-host-a-website-on-github.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/components/footer-small.html" afterPath="$PROJECT_DIR$/_includes/components/footer-small.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/scripts.html" afterPath="$PROJECT_DIR$/_includes/scripts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/codebase.html" afterPath="$PROJECT_DIR$/_layouts/codebase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/index.html" afterPath="$PROJECT_DIR$/codebase/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/_posts/2016-02-04-how-to-host-a-website-on-github.html" afterPath="$PROJECT_DIR$/blog/_posts/2016-02-04-how-to-host-a-website-on-github.html" />
     </list>
     <ignored path="codemons.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,8 +56,8 @@
       <file leaf-file-name="2016-02-04-how-to-host-a-website-on-github.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/_posts/2016-02-04-how-to-host-a-website-on-github.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23266745">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.12925969">
+              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -939,8 +933,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/_posts/2016-02-04-how-to-host-a-website-on-github.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23266745">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.12925969">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
           <folding />
         </state>
       </provider>
