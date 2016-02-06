@@ -16,10 +16,7 @@ description: Collection of algorithms
         <div class="col l12 m12 s12">
 
           <div class="input-field margin-top-10px">
-            <i class="material-icons prefix">search</i>
-            <input id="search" type="text" autocomplete="off" placeholder="search for any programs like binary search, quick sort etc.">
-            <label for="search" data-error="wrong" data-success="right" data-default="wrong" >Search</label>
-
+            <input id="search" type="text" autocomplete="off" placeholder="search">
             <script>
               (function(){
                 $('#search').on('keyup', function () {
@@ -47,32 +44,44 @@ description: Collection of algorithms
         <div id="codebase-list" class="col l12 m12 s12">
           <div class="row">
 
-            <div class="row">
-			        {% assign sorted_posts = (site.categories['codebase'] | sort: 'title') %}
-              {% for post in sorted_posts %}
-                {% assign animateDelay = forloop.index | plus : 2 | modulo: 3 | times: 150 %}
-                {% assign mod = forloop.index | modulo: 3 %}
-
-
-                <div class="col l4 m6 s12 wow fadeInUp" data-wow-delay="{{animateDelay}}ms">
-                  <a href="{{site.baseurl}}{{post.url}}#top" title="{{post.title}}">
-                  <div class="card hoverable">
-                    <div class="card-content">
-                      <div class="center">
-                        <span class="card-title yellow-text text-darken-4">{{post.title}}</span>
-                        <div class="clear"></div>
-                        <small class="wow bounceIn black-text">Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
-                      </div>
-                      <p class="black-text">{{ post.description }}</p>
-                    </div>
+            <div class="col s12 m4">
+              <a href="/codebase/all" title="Search Algorithms">
+                <div class="card hoverable">
+                  <div class="card-image waves-effect waves-block waves-light grey lighten-2">
+                    <img src="/assets/img/blog/first-post.jpg">
                   </div>
-                  </a>
+                  <div class="card-content">
+                    <span class="card-title yellow-text text-darken-4">All Programs</span>
+                  </div>
                 </div>
+              </a>
+            </div>
 
+            {% capture category_list %}{% for cat in site.categories %}{{ cat[0] }}{% if forloop.last != true%}|{% endif %}{% endfor %}{% endcapture %}
+            {% assign sorted_cats = category_list | split:'|' |  sort %}
+            {% assign list = 'codebase' %}
 
+            {% for category in sorted_cats %}
+              {% for post in site.categories[list] %}
+
+                {% if category == post.categories[1] %}
+                  <div class="col s12 m4">
+                    <a href="/codebase/{{category}}" title="{{ category | replace:'-',' ' }}">
+                      <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light grey lighten-2">
+                          <img src="/assets/img/blog/first-post.jpg">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title yellow-text text-darken-4 capitalize">{{ category | replace:'-',' ' }}</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  {% break %}
+                {% endif %}
 
               {% endfor %}
-            </div>
+            {% endfor %}
 
           </div>
         </div>
