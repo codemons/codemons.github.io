@@ -8,17 +8,18 @@ description: Collection of algorithms
   <article  itemscope itemtype=http://schema.org/Article>
     <section class="container">
       <h3 itemprop=name class="margin-bottom-1px">{{ page.title }}</h3>
-      <h6 class="grey-text text-darken-1 thin margin-left-3px">{{ page.description }}</h6>
+      <h6 id="counter" class="grey-text text-darken-1 thin margin-left-3px">{{ page.description }}. Currently we hold <span class="red-text timer">{{site.categories['codebase'].size}}</span> programs.</h6>
     </section>
 
     <section id="post-list" class="container">
       <div class=row>
-        <div class="col l2 m12 s12">
+        <div class="col l12">
 
           <div class="row margin-top-10px">
             <div class="input-field col m12 s12">
+              <i class="material-icons prefix">search</i>
               <input id="search" type="text" autocomplete="off">
-              <label for="search" data-error="wrong" data-success="right" data-default="wrong" ><i class="material-icons">search</i></label>
+              <label for="search" data-error="wrong" data-success="right" data-default="wrong" >Search</label>
 
               <script>
                 (function(){
@@ -40,14 +41,12 @@ description: Collection of algorithms
                   });
                 }());
               </script>
-
-              <p id="counter" class="hide-on-small-and-down">Programs count :: <span class="red-text timer">{{site.categories['codebase'].size}}</span></p>
             </div>
           </div>
 
         </div>
 
-        <div id="codebase-list" class="col l10 m12 s12">
+        <div id="codebase-list" class="col l12">
           <div class="row wow fadeInUp">
 
             <div class="row">
@@ -57,11 +56,12 @@ description: Collection of algorithms
                 <div class="col l4 m6 s12">
                   <a href="{{site.baseurl}}{{post.url}}#top" title="{{post.title}}">
                   <div class="card hoverable">
-                    <div class="card-content height-250px">
-                      <span class="card-title yellow-text text-darken-4">{{post.title}}</span>
-                      <span class="material-icons right blue-text">touch_app</span>
-                      <div class="clear"></div>
-                      <small class="wow bounceIn black-text">Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
+                    <div class="card-content">
+                      <div class="center">
+                        <span class="card-title yellow-text text-darken-4">{{post.title}}</span>
+                        <div class="clear"></div>
+                        <small class="wow bounceIn black-text">Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
+                      </div>
                       <p class="black-text">{{ post.description }}</p>
                     </div>
                   </div>

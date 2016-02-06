@@ -1,13 +1,10 @@
 <section class="section">
   <div class="container">
     <span class="red-text margin-right-10px">Tags : </span>
-
     {% for tag in page.tags%}
-    <div class="chip">
-      {{tag}}
-      <i class="material-icons">close</i>
-    </div>
+      <a href="/codebase/?tags={{tag}}">
+        <div class="chip">{{tag}}</div>
+      </a>
     {%endfor%}
-
   </div>
 </section>
