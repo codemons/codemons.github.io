@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3da0acd9-bd41-4dc2-ad53-3ad11f967f58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codebase/sorting-algorithms/index.html" afterPath="$PROJECT_DIR$/codebase/sorting-algorithms/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codebase/_posts/2016-02-07-displaying-patterns.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codemons.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/codebase/sorting-algorithms/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33607522">
+            <state vertical-scroll-proportion="-9.225806">
               <caret line="44" column="62" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016-02-07-displaying-patterns.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/codebase/_posts/2016-02-07-displaying-patterns.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.10797546">
+              <caret line="4" column="73" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -48,16 +59,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-2.1290324">
               <caret line="3" column="162" selection-start-line="3" selection-start-column="162" selection-end-line="3" selection-end-column="162" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014-02-09-bus-reservation-system.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/products/_posts/2014-02-09-bus-reservation-system.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4193548">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -138,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/team.html" />
         <option value="$PROJECT_DIR$/music.html" />
         <option value="$PROJECT_DIR$/_includes/adsence-responsive.html" />
         <option value="$PROJECT_DIR$/_includes/adsence-box.html" />
@@ -189,6 +189,7 @@
         <option value="$PROJECT_DIR$/codebase/_posts/2016-01-26-palindrome.html" />
         <option value="$PROJECT_DIR$/codebase/index.html" />
         <option value="$PROJECT_DIR$/codebase/sorting-algorithms/index.html" />
+        <option value="$PROJECT_DIR$/codebase/_posts/2016-02-07-displaying-patterns.html" />
       </list>
     </option>
   </component>
@@ -640,13 +641,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_includes/disqus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/components/github-code-highlighter.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4193548">
@@ -1039,8 +1033,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codebase/sorting-algorithms/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33607522">
+        <state vertical-scroll-proportion="-9.225806">
           <caret line="44" column="62" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codebase/_posts/2016-02-07-displaying-patterns.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10797546">
+          <caret line="4" column="73" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
           <folding />
         </state>
       </provider>
