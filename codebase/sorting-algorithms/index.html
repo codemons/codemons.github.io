@@ -42,7 +42,7 @@ keywords: ['sorting algorithms', 'sorting algorithms in c', 'sorting algorithms 
         <div id="codebase-list" class="col l12 m12 s12">
           <div class="row">
 
-            {% assign sorted_posts = (site.categories['search-algorithms'] | sort: 'title') %}
+            {% assign sorted_posts = (site.categories['sorting-algorithms'] | sort: 'title') %}
             {% for post in sorted_posts %}
 
               {% assign animateDelay = forloop.index | plus : 2 | modulo: 3 | times: 150 %}
