@@ -8,52 +8,53 @@ description: Collection of algorithms
   <article  itemscope itemtype=http://schema.org/Article>
     <section class="container">
       <h3 itemprop=name class="margin-bottom-1px">{{ page.title }}</h3>
-      <h6 id="counter" class="grey-text text-darken-1 thin margin-left-3px">{{ page.description }}. Currently we hold <span class="red-text timer">{{site.categories['codebase'].size}}</span> programs.</h6>
+      <h6 id="counter" class="grey-text text-darken-1 margin-left-3px">{{ page.description }}. Currently we hold <span class="red-text timer">{{site.categories['codebase'].size}}</span> programs.</h6>
     </section>
 
     <section id="post-list" class="container">
       <div class=row>
-        <div class="col l12">
+        <div class="col l12 m12 s12">
 
-          <div class="row margin-top-10px">
-            <div class="input-field col m12 s12">
-              <i class="material-icons prefix">search</i>
-              <input id="search" type="text" autocomplete="off">
-              <label for="search" data-error="wrong" data-success="right" data-default="wrong" >Search</label>
+          <div class="input-field margin-top-10px">
+            <i class="material-icons prefix">search</i>
+            <input id="search" type="text" autocomplete="off" placeholder="search for any programs like binary search, quick sort etc.">
+            <label for="search" data-error="wrong" data-success="right" data-default="wrong" >Search</label>
 
-              <script>
-                (function(){
-                  $('#search').on('keyup', function () {
+            <script>
+              (function(){
+                $('#search').on('keyup', function () {
 
-                    var keywords = $(this).val().split(' ');
+                  var keywords = $(this).val().split(' ');
 
-                    $('#codebase-list').find('.col').each(function(){
-                      var card = $(this);
-                      card.hide();
+                  $('#codebase-list').find('.col').each(function(){
+                    var card = $(this);
+                    card.hide();
 
-                      $.each(keywords, function(index, word){
-                        if(card.text().toLowerCase().indexOf(word.toLowerCase()) !== -1){
-                          card.show();
-                        }
-                      });
-
+                    $.each(keywords, function(index, word){
+                      if(card.text().toLowerCase().indexOf(word.toLowerCase()) !== -1){
+                        card.show();
+                      }
                     });
+
                   });
-                }());
-              </script>
-            </div>
+                });
+              }());
+            </script>
           </div>
 
         </div>
 
-        <div id="codebase-list" class="col l12">
-          <div class="row wow fadeInUp">
+        <div id="codebase-list" class="col l12 m12 s12">
+          <div class="row">
 
             <div class="row">
 			        {% assign sorted_posts = (site.categories['codebase'] | sort: 'title') %}
               {% for post in sorted_posts %}
+                {% assign animateDelay = forloop.index | plus : 2 | modulo: 3 | times: 150 %}
+                {% assign mod = forloop.index | modulo: 3 %}
 
-                <div class="col l4 m6 s12">
+
+                <div class="col l4 m6 s12 wow fadeInUp" data-wow-delay="{{animateDelay}}ms">
                   <a href="{{site.baseurl}}{{post.url}}#top" title="{{post.title}}">
                   <div class="card hoverable">
                     <div class="card-content">
@@ -68,8 +69,8 @@ description: Collection of algorithms
                   </a>
                 </div>
 
-                {% assign mod = forloop.index | modulo: 3 %}
-                {% if mod == 0 %}<!--div class="clear"></div-->{% endif %}
+
+
               {% endfor %}
             </div>
 
