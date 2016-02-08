@@ -1,0 +1,41 @@
+---
+layout: codebase
+title: Server/Client Program
+author: shivaji
+description: Program to implement singly liked list. A singly-linked list is a data structure that holds a sequence of linked nodes. Each node, in turn, contains data and a pointer, which can point to another node.
+keywords: ['singly linked list', 'java program']
+tags: [Java]
+---
+<div class="container">
+  <div class="row">
+    <div class="col l9 s12">
+      <p>Simple Java Client/Server Program, where client establishes a connection with the server, sends it a sentence and the server replies back the same sentence with all letters capitalized.</p>
+      <blockquote>Note: Configure your server ip address in client program.</blockquote>
+    </div>
+    <div class="col l3 s12 wow fadeInRight center">
+      {% include adsence-box.html %}
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="row">
+    <div class="col m12 s12">
+      <h3>Server</h3>
+      {% include components/github-code-highlighter.html id="code-server" program='src/main/java/codemons/codebase/chat/Server.java' repo='codemons/codebase-java' prism='language-java' %}
+      <h3>Client</h3>
+      {% include components/github-code-highlighter.html id="code-client" program='src/main/java/codemons/codebase/chat/Client.java' repo='codemons/codebase-java' prism='language-java' %}
+    </div>
+    <div class="col m6 s12">
+      <h3>Server Output</h3>
+      <pre><code class="language-c">Waiting for clients...
+Client connected from localhost
+Client Said: hello</code></pre>
+    </div>
+    <div class="col m6 s12">
+      <h3>Client Output</h3>
+      <pre><code class="language-c">You connected to localhost
+hello
+Server Reply: Converted to Uppercase - > 'HELLO'</code></pre>
+    </div>
+    </div>
+  </div>
+</div>
