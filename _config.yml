@@ -9,6 +9,7 @@ type:             website
 logo:             /logo.png
 
 contact:  contact@codemons.com
+contact-encoded: '&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#099;&#111;&#100;&#101;&#109;&#111;&#110;&#115;&#046;&#099;&#111;&#109;'
 
 # Author details
 author:
