@@ -1,0 +1,73 @@
+---
+layout: default
+title: Programming Challenges
+description: Programming Challenges and Interview program solved.
+keywords: ['Data Structures implementations', 'singly linked list', 'doubly linked list implemented in c', 'stack', 'queue']
+---
+<main class="color-light">
+  {% include components/nav.html %}
+  <article  itemscope itemtype=http://schema.org/Article>
+    <section class="container">
+      <h3 itemprop=name class="margin-bottom-1px">{{page.title}}</h3>
+    </section>
+
+    <section id="post-list" class="container">
+      <div class=row>
+        <div class="col l12 m12 s12">
+
+          <div class="input-field margin-top-10px">
+            <input id="search" type="text" autocomplete="off" placeholder="search in below set of programs">
+            <script>(function(){
+                $('#search').on('keyup', function () {
+
+                  var keywords = $(this).val().split(' ');
+
+                  $('#codebase-list').find('.col').each(function(){
+                    var card = $(this); card.hide();
+
+                    $.each(keywords, function(index, word){
+                      if(card.text().toLowerCase().indexOf(word.toLowerCase()) !== -1){
+                        card.show();
+                      }
+                    });
+
+                  });
+                });
+              }());</script>
+          </div>
+
+        </div>
+
+        <div id="codebase-list" class="col l12 m12 s12">
+          <div class="row">
+            <div class="col m12"></div>
+
+            {% assign sorted_posts = (site.categories['code-challenges'] | sort: 'title') %}
+            {% for post in sorted_posts %}
+
+              {% assign animateDelay = forloop.index | plus : 2 | modulo: 3 | times: 150 %}
+              {% assign mod = forloop.index | modulo: 3 %}
+
+              <div class="col l4 m6 s12 wow fadeInUp" data-wow-delay="{{animateDelay}}ms">
+                <a href="{{site.baseurl}}{{post.url}}#top" title="{{post.title}}">
+                <div class="card hoverable">
+                  <div class="card-content">
+                    <span class="card-title yellow-text text-darken-4">{{post.title}}</span>
+                    <div class="clear"></div>
+                    <small class="wow bounceIn black-text">Posted on {{ post.date | date: "%B %-d, %Y" }}</small>
+                    <p class="black-text">{{ post.description }}</p>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </article>
+</main>
+{% include components/footer-small.html %}
