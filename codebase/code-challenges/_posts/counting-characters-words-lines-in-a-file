@@ -1,0 +1,28 @@
+---
+layout: codebase
+author: shivaji
+title: Counting Characters, Words and Lines In A File
+description: Program to print 'z' of size 'n'.
+keywords: ['print z of size n', 'interview programs solved', 'programming challenges']
+tags: [Java]
+---
+<div class="container">
+  <div class="row">
+    <div class="col l9 s12">
+      <p>In following program, a file pointer is created, which is initialized to point to file content, this pointer is used to loop through each character of file until end of file is reached. In the process we count each character, if a newline encounters then it is counted as line as well as character and word. Similarly if space or tab space encounters we count it as word and also as character.</p>
+      
+
+      <blockquote>PCounting Characters, Words and Lines In A File</blockquote>
+    </div>
+    <div class="col l3 s12 wow fadeInRight center">
+      {% include adsence-box.html %}
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="row">
+    <div class="col m12 s12">
+      <h3>Code</h3>
+      {% include components/github-code-highlighter.html id="code-count" program='C/count-everything.c' repo='shivajivarma/code-base' prism='language-c' %}
+    </div>
+  </div>
+</div>
