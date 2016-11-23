@@ -1,0 +1,36 @@
+[{
+	"id": "spring_framework",
+	"name": "Spring Framework",
+	"description": "Learn about one of the most popular application frameworks in Java today.",
+	"backgroundColor": "#273746",
+	"image": "assets/img/topics/spring-framework.png"
+},
+{
+	"id": "data_structure_and_algorithms",
+	"name": "Data Structure \u0026 Algorithms",
+	"description": "Learn all the basic and advanced topics of Data Structures with great concepts and shortest lessons.",
+	"backgroundColor": "#90A4AE",
+	"image": "assets/img/topics/data-structures.png"
+},
+{
+	"id": "python",
+	"name": "Python",
+	"description": "Learn the fundamentals and core concepts of the Python programming language.",
+	"backgroundColor": "#138D75",
+	"image": "assets/img/topics/python.png"
+},
+{
+	"id": "javascript",
+	"name": "JavaScript",
+	"description": "Learn the fundamentals and core concepts of the JavaScript programming language.",
+	"backgroundColor": "#2E86C1",
+	"image": "assets/img/topics/javascript.png"
+},
+{
+	"id": "core_java",
+	"name": "Core Java",
+	"description": "Learn the fundamentals and core concepts of the Java programming language.",
+	"backgroundColor": "#FFC300",
+	"image": "assets/img/topics/corejava.png"
+}]
+

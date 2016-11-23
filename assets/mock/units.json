@@ -1,0 +1,42 @@
+[{
+	"_id": {
+		"$oid": "57f9face48266cdd488bb745"
+	},
+	"uri": 1,
+	"courseId": "search_techniques",
+	"name": "Basic Search Algorithms",
+	"description": "Some description",
+	"tutorials": [
+		{
+			"$ref": "tutorials",
+			"$id": {
+				"$oid": "57fa6793c31e5a2757645e06"
+			}
+		},
+		{
+			"$ref": "tutorials",
+			"$id": {
+				"$oid": "57fa67a2c31e5a2757645e07"
+			}
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5815d9211b6b2817bc53c310"
+	},
+	"_class": "com.codemons.unit.model.Unit",
+	"name": "Basic Sorting Techiques",
+	"description": "Some description",
+	"uri": "1",
+	"courseId": "sorting_techniques",
+	"tutorials": [
+		{
+			"$ref": "tutorials",
+			"$id": {
+				"$oid": "5815ed431b6b2817bc53c317"
+			}
+		}
+	]
+}]
+

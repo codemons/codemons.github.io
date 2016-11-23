@@ -1,0 +1,19 @@
+[{
+	"id": "search_techniques",
+	"name": "Searching Techniques",
+	"description": "In computer science, a search algorithm is an algorithm for finding an item with specified properties among a collection of items which are coded into a computer program, that look for clues to return what is wanted.",
+	"code": "SEARCH",
+	"topics": [
+		"data_structure_and_algorithms"
+	]
+},
+{
+	"id": "sorting_techniques",
+	"name": "Sorting Techniques",
+	"description": "A sorting algorithm is an algorithm that puts elements of a list in a certain order.",
+	"code": "SORT",
+	"topics": [
+		"data_structure_and_algorithms"
+	]
+}]
+

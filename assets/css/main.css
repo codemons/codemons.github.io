@@ -1,0 +1,151 @@
+/********************************
+ ********Loading animation ******
+ *********************************/
+.loading {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 15px);
+}
+.loading-bar {
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    border-radius: 4px;
+    animation: loading 1s ease-in-out infinite;
+}
+.loading-bar:nth-child(1) {
+    background-color: #3498db;
+    animation-delay: 0s;
+}
+.loading-bar:nth-child(2) {
+    background-color: #c0392b;
+    animation-delay: 0.09s;
+}
+.loading-bar:nth-child(3) {
+    background-color: #f1c40f;
+    animation-delay: .18s;
+}
+.loading-bar:nth-child(4) {
+    background-color: #27ae60;
+    animation-delay: .27s;
+}
+.loading-bar:nth-child(5) {
+    background-color: #27ae60;
+    animation-delay: .36s;
+}
+
+@keyframes loading {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1, 2.2);
+    }
+    40% {
+        transform: scale(1);
+    }
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 75%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    /*width: /*whatever width you want*/;
+}
+
+/********************************
+ ******** CODE HIGHLIGHTER - START ******
+ *********************************/
+.prettyprint {
+    background: #1d1f21;
+    font-family: Menlo, Bitstream Vera Sans Mono, DejaVu Sans Mono, Monaco, Consolas, monospace;
+    border: 0 !important
+}
+
+.pln {
+    color: #c5c8c6
+}
+
+ol.linenums {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #969896
+}
+
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
+    padding-left: 1em;
+    background-color: #1d1f21;
+    list-style-type: decimal
+}
+
+@media screen {
+    .str {
+        color: #b5bd68
+    }
+
+    .kwd {
+        color: #b294bb
+    }
+
+    .com {
+        color: #969896
+    }
+
+    .typ {
+        color: #81a2be
+    }
+
+    .lit {
+        color: #de935f
+    }
+
+    .pun {
+        color: #c5c8c6
+    }
+
+    .opn {
+        color: #c5c8c6
+    }
+
+    .clo {
+        color: #c5c8c6
+    }
+
+    .tag {
+        color: #c66
+    }
+
+    .atn {
+        color: #de935f
+    }
+
+    .atv {
+        color: #8abeb7
+    }
+
+    .dec {
+        color: #de935f
+    }
+
+    .var {
+        color: #c66
+    }
+
+    .fun {
+        color: #81a2be
+    }
+}
+/********************************
+ ******** CODE HIGHLIGHTER - END ******
+ *********************************/

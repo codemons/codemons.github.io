@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-Disallow: /no-search/
-Sitemap: http://codemons.com/sitemap.xml

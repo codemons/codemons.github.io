@@ -1,22 +1,18 @@
 (function ($) {
   $(function () {
 
+      //Materilizecss plugins
+      $('.button-collapse').sideNav();
+      $('.scrollspy').scrollSpy();
+
     //Initiate WOW JS
     new WOW().init();
 
-    //Navigation
-    $('.button-collapse').sideNav();
-
-    //Parrallax Effect
-    $('.parallax').parallax();
-
-
-    $('.scrollspy').scrollSpy();
 
     $('.slider').slider();
 
 	// Countdown
-	$('#counter').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+	/*$('#counter').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
 		if (visible) {
 			$(this).find('.timer').each(function () {
 				var $this = $(this);
@@ -30,21 +26,30 @@
 			});
 			$(this).unbind('inview');
 		}
-	});
+	});*/
 
-  $("#owl-index").owlCarousel({
-    autoPlay : 5000,
-    stopOnHover : true,
-    paginationSpeed : 1000,
-    singleItem : true,
-    autoHeight : false,
-    pagination: false
-  });
+	  var navbarUpdateColor = function() {
+		  var o = $(document).scrollTop() / 500;
+		  if (o > 1.000) { o = 1;}
+		  var e = $('.theme-index nav');
+          if(e.length){
+              var currentColor = e.css('background-color');
+              var rgb = currentColor.replace(/^(rgb|rgba)\(/, '').replace(/\)$/, '').replace(/\s/g, '').split(',');
+              var newColor = 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + o + ')';
+              e.attr('style', 'background-color: ' + newColor + ' !important');
 
-  var owlWrapperHeight = parseInt($('.owl-wrapper').css('height'),10);
-  $('.owl-item').each(function(){
-    $(this).css('padding-top',(owlWrapperHeight-parseInt($(this).css('height'), 10))/2 + 'px');
-  });
+              if(o===1){
+                  e.removeClass('z-depth-0');
+              } else{
+                  e.addClass('z-depth-0');
+              }
+          }
+
+	  };
+
+	  navbarUpdateColor();
+
+	  $(document).on('scroll', function (e) { navbarUpdateColor(); });
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space

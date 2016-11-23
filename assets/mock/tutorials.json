@@ -1,0 +1,86 @@
+[{
+	"_id": {
+		"$oid": "57fa6793c31e5a2757645e06"
+	},
+	"name": "Binary Search",
+	"content": [
+		{
+			"type": "paragraph",
+			"data": "A \u003cstrong\u003eBinary search\u003c/strong\u003e locates an item in a sorted array by repeatedly dividing the search interval in half. The initial interval includes the entire array. If the value of the search key is less than the item in the middle of the interval, then the next interval will be the lower half of the current interval. If the value of the search key is greater than the middle item, then the next interval will be the upper half. The search process repeats until the item is found or the search interval is empty."
+		},
+		{
+			"type": "paragraph",
+			"data": "Binary Search is an O(log n) algorithm, which is more efficient than a linear search for large arrays."
+		},
+		{
+			"type": "blockquote",
+			"data": "Program to perform search on sorted set of numbers using Binary search technique"
+		},
+		{
+			"type": "heading",
+			"data": "Code"
+		},
+		{
+			"type": "code",
+			"data": "int%20binarySearch(int%20arr%5B%5D%2C%20int%20arrSize%2C%20int%20search)%20%7B%0A%20%20%20%20int%20low%20%3D%200%2C%20high%20%3D%20arrSize%20-%201%2C%20pos%20%3D%20-1%3B%0A%0A%20%20%20%20while%20(low%20%3C%3D%20high)%20%7B%0A%20%20%20%20%20%20%20%20int%20mid%20%3D%20(low%20%2B%20high)%20%2F%202%3B%0A%20%20%20%20%20%20%20%20if%20(search%20%3D%3D%20arr%5Bmid%5D)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20pos%20%3D%20mid%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20%20%20%7D%20else%20if%20(search%20%3C%20arr%5Bmid%5D)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20high%20%3D%20mid%20-%201%3B%0A%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20low%20%3D%20mid%20%2B%201%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%0A%20%20%20%20if%20(pos%20!%3D%20-1)%20%7B%0A%20%20%20%20%20%20%20%20return%20pos%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20return%20-1%3B%0A%20%20%20%20%7D%0A%7D"
+		},
+		{
+			"type": "heading",
+			"data": "Output"
+		},
+		{
+			"type": "code",
+			"data": "Enter%20size%20of%20the%20array%20%3A%3A%208%0A%0AEnter%20elements%20of%20the%20array%20in%20ascending%20order%20%3A%3A%201%205%207%2011%2012%2056%20102%20156%0A%0AEnter%20the%20number%20to%20be%20searched%20%3A%3A%20102%0A%0A102%20is%20present%20at%20location%207."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "57fa67a2c31e5a2757645e07"
+	},
+	"name": "Linear Search",
+	"content": [
+		{
+			"type": "paragraph",
+			"data": "\u003cstrong\u003eLinear search\u003c/strong\u003e, also known as sequential search, is a process that checks every element in the list sequentially until the desired element is found."
+		},
+		{
+			"type": "blockquote",
+			"data": "Program to perform search on set of numbers using Linear search technique"
+		},
+		{
+			"type": "heading",
+			"data": "Code"
+		},
+		{
+			"type": "code",
+			"data": "%23include%20%3Cstdio.h%3E%0A%0Aint%20linearSearch(int%20arr%5B%5D%2C%20int%20arrSize%2C%20int%20search)%20%7B%0A%20%20%20%20int%20c%3B%0A%20%20%20%20for%20(c%20%3D%200%3B%20c%20%3C%20arrSize%3B%20c%2B%2B)%20%7B%0A%20%20%20%20%20%20%20%20if%20(arr%5Bc%5D%20%3D%3D%20search)%20%20%20%20%20%2F*%20if%20required%20element%20found%20*%2F%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20return%20c%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20if%20(c%20%3D%3D%20arrSize)%0A%20%20%20%20%20%20%20%20return%20-1%3B%0A%7D%0A%0A%2F*%0Aint%20main()%0A%7B%0A%20%20%20%20int%20arr%5B'%20'%5D%2CarrSize%2Csearch%2Ci%3B%0A%0A%20%20%20%20printf(%22Enter%20size%20of%20the%20array%20%3A%3A%22)%3B%0A%20%20%20%20scanf(%22%25d%22%2C%26arrSize)%3B%0A%0A%20%20%20%20printf(%22%5CnEnter%20elements%20of%20the%20array%20%3A%3A%5Cn%22)%3B%0A%20%20%20%20for(i%3D0%3B%20i%3CarrSize%3B%20i%2B%2B)%0A%20%20%20%20%20%20%20%20scanf(%22%25d%22%2C%26arr%5Bi%5D)%3B%0A%0A%20%20%20%20printf(%22Enter%20the%20number%20to%20be%20searched%20%3A%3A%5Cn%22)%3B%0A%20%20%20%20scanf(%22%25d%22%2C%26search)%3B%0A%0A%20%20%20%20int%20c%3DlinearSearch(arr%2CarrSize%2Csearch)%3B%0A%0A%20%20%20%20if(c!%3D-1)%20printf(%22%25d%20is%20present%20at%20location%20%25d.%5Cn%22%2C%20search%2C%20c%2B1)%3B%0A%20%20%20%20else%20printf(%22%25d%20is%20not%20present%20in%20array.%5Cn%22%2C%20search)%3B%0A%0A%20%20%20%20return%200%3B%0A%7D%0A*%2F"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "5815ed431b6b2817bc53c317"
+	},
+	"_class": "com.codemons.tutorial.model.Tutorial",
+	"name": "Bubble Sort",
+	"content": [
+		{
+			"type": "paragraph",
+			"data": "\u003cb\u003eBubble sort\u003c/b\u003e, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order."
+		},
+		{
+			"type": "paragraph",
+			"data": "The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted."
+		},
+		{
+			"type": "paragraph",
+			"data": "The algorithm, which is a comparison sort, is named for the way smaller elements \u0026#34;bubble\u0026#34; to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort."
+		},
+		{
+			"type": "paragraph",
+			"data": "It can be practical if the input is usually in sort order but may occasionally have some out-of-order elements nearly in position."
+		}
+	]
+}]
+
