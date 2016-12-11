@@ -6,7 +6,7 @@
       $('.scrollspy').scrollSpy();
 
     //Initiate WOW JS
-    new WOW().init();
+   // new WOW().init();
 
 
     $('.slider').slider();
